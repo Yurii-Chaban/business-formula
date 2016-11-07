@@ -1,0 +1,28 @@
+footer {
+	@include site-container;
+	padding: 34px 0 0;
+	background-color: #68be28;
+
+
+	.copyright {
+		clear: both;
+		margin: 0 auto;
+		padding: 5px 0;
+		text-align: center;
+		@include border-box;
+		background: #000;
+		.copyright-sign {
+			margin: 0 auto;
+			color: #bababa;
+			font: 400 15px / 22px $HelveticaNeue;
+
+			a {
+				color: #bababa;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,212 @@
+
+@import "compass/reset";
+
+
+@font-face {
+  font-family: 'MyriadPro';
+  src: url('../resources/MyriadPro/Light/MyriadPro-Light.eot');
+  src: url('../resources/MyriadPro/Light/MyriadPro-Light.woff2') format('woff2'),
+       url('../resources/MyriadPro/Light/MyriadPro-Light.woff') format('woff'),
+       url('../resources/MyriadPro/Light/MyriadPro-Light.ttf') format('truetype'),
+       url('../resources/MyriadPro/Light/MyriadPro-Light.svg#MyriadPro-Light') format('svg'),
+       url('../resources/MyriadPro/Light/MyriadPro-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyriadPro';
+  src: url('..resources/MyriadPro/Semibold/MyriadPro-Semibold.eot');
+  src: url('..resources/MyriadPro/Semibold/MyriadPro-Semibold.woff2') format('woff2'),
+       url('..resources/MyriadPro/Semibold/MyriadPro-Semibold.woff') format('woff'),
+       url('..resources/MyriadPro/Semibold/MyriadPro-Semibold.ttf') format('truetype'),
+       url('..resources/MyriadPro/Semibold/MyriadPro-Semibold.svg#MyriadPro-Semibold') format('svg'),
+       url('..resources/MyriadPro/Semibold/MyriadPro-Semibold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyriadPro';
+  src: url('..resources/MyriadPro/Regular/MyriadPro-Regular.eot');
+  src: url('..resources/MyriadPro/Regular/MyriadPro-Regular.woff2') format('woff2'),
+       url('..resources/MyriadPro/Regular/MyriadPro-Regular.woff') format('woff'),
+       url('..resources/MyriadPro/Regular/MyriadPro-Regular.ttf') format('truetype'),
+       url('..resources/MyriadPro/Regular/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg'),
+       url('..resources/MyriadPro/Regular/MyriadPro-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('..resources//Montserrat/Regular/Montserrat-Regular.eot');
+  src: url('..resources//Montserrat/Regular/Montserrat-Regular.woff2') format('woff2'),
+       url('..resources//Montserrat/Regular/Montserrat-Regular.woff') format('woff'),
+       url('..resources//Montserrat/Regular/Montserrat-Regular.ttf') format('truetype'),
+       url('..resources//Montserrat/Regular/Montserrat-Regular.svg#Montserrat-Regular') format('svg'),
+       url('..resources//Montserrat/Regular/Montserrat-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+body {
+	font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	background: #fff;
+}
+
+$Roboto: 'Roboto', sans-serif;
+$HelveticaNeue: 'HelveticaNeue', sans-serif;
+
+@mixin site-container {
+	position: relative;
+	width: 100%;
+	box-sizing: border-box;
+	margin: auto;
+	background-size: contain;
+	background-position: center;
+}
+@mixin transition {
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+@mixin border-box {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+@mixin site-pagination {
+	@include border-box;
+	width: 100%;
+	margin: 34px auto 31px;
+	text-align: center;
+
+	li {
+		display: inline-block;
+		margin: 0 3px;
+
+		a {
+			display: block;
+			padding: 4px 9px;
+			background-color: #68be28;
+			border: 1px solid rgba(0, 0, 0, 0);
+			font: 400 18px / 20px $Roboto;
+			color: #fff;
+			@include transition;
+
+			&:hover {
+				color: #68be28;
+				background-color: #fff;
+				border-color: #68be28;
+			}
+		}
+		a.pagination-active {
+			color: #68be28;
+			background-color: #fff;
+			border-color: #68be28;
+		}
+	}
+}
+@mixin direction {
+	@include site-container;
+	padding: 10px 0;
+	background-color: #68be28;
+	.arrow-back {
+		float: left;
+	}
+	.direction-title {
+		margin: 0 auto;
+		text-align: center;
+		a {
+			color: white;
+			font: 400 15px / 20px $Roboto;
+			text-transform: uppercase;
+		}
+	}
+}
+
+
+@mixin mapWrapper {
+	overflow:hidden;
+	padding-bottom:56.25%;
+	position:relative;
+	height:0;
+	iframe{
+		left:0;
+		top:0;
+		height:100%;
+		width:100%;
+		position:absolute;
+	}
+}
+
+@mixin videoWrapper {
+	position: relative;
+	margin: 15px auto;
+	padding-bottom: 56.25%; /* 16:9 */
+	height: 0;
+	max-width: 980px;
+	max-height: 432px;
+	overflow: hidden;
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+@mixin section-title {
+	position: relative;
+	margin: 6px auto 10px;
+	padding: 0 0 16px 0;
+	text-align: center;
+	color: black;
+	font: 400 22px / 26px $Roboto;
+	text-transform: uppercase;
+	
+	span {
+		color: #68be28;
+	}
+
+	@media (min-width: 768px) {
+		font-size: 35px;
+		line-height: 38px;
+	}
+}
+
+.wrapper {
+	max-width: 1020px;
+	margin: 0 auto;
+	padding: 0 15px;
+	@include border-box;
+	position: relative;
+}
+a {
+	text-decoration: none;
+}
+.direction {
+	@include direction;
+}
+
+.section-title {
+	@include section-title;
+}
+
+.pagination-list {
+	@include site-pagination;
+}
+
+// include header
+@import "header";
+@import "footer";
+@import "main-page";
+@import "media";
