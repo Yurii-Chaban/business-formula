@@ -79,3 +79,45 @@ $(function () {
         }
     });
 });
+
+// for slider in Home page
+var swiper_main = new Swiper('.swiper-container-home-page', {
+    paginationClickable: true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    simulateTouch: true,
+    centeredSlides: true,
+    autoplay: 3500,
+    speed: 1000,
+    watchSlidesProgress: true,
+    autoplayDisableOnInteraction: false
+});
+
+// CUSTOMIZE GOOGLE MAPS
+// function initMap() {
+
+//     var styleArray = [
+//     {
+//         featureType: "all",
+//         stylers: [
+//         { saturation: -80 }
+//         ]
+//     },{
+//         featureType: "road.arterial",
+//         elementType: "geometry",
+//         stylers: [
+//         { hue: "#00ffee" },
+//         { saturation: 50 }
+//         ]
+//     },{
+//         featureType: "poi.business",
+//         elementType: "labels",
+//         stylers: [
+//         { visibility: "off" }
+//         ]
+//     }
+//     ];
+// }

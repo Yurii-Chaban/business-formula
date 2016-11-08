@@ -1,8 +1,64 @@
 footer {
 	@include site-container;
-	padding: 34px 0 0;
-	background-color: #68be28;
+	padding: 32px 0 0;
+	background-color: white;
+	box-shadow: 0 0 16px rgba(0, 0, 0, 0.34);
 
+	.prefooter {
+		.footer-logo {
+			margin: 0 auto;
+			text-align: center;
+			.logo-f {
+				display: inline-block;
+				max-width: 36px;
+				max-height: 36px;
+				overflow: hidden;
+				margin: -5px 4px 0 15px;
+				padding: 0;
+				vertical-align: middle;
+
+				img {
+					max-width: 100%;
+					height: auto;
+				}
+			}
+			.logo-sign {
+				display: inline-block;
+				margin: 3px 0 0;
+				color: black;
+				font: 300 21px / 30px $MyriadPro;
+			}
+		}
+		.right-block {
+			.footer-phone {
+				display: block;
+				margin: 25px auto 0;
+				text-align: center;
+				color: black;
+				font: 300 21px / 35px $MyriadPro;
+			}
+
+			.working-hours {
+				margin: 0 auto;
+				text-align: center;
+				color: black;
+				font: 300 21px / 35px $MyriadPro;
+			}
+			.location {
+				margin: 30px auto;
+				text-align: center;
+				h3 {
+					text-align: center;
+					color: black;
+					font: 300 21px / 35px $MyriadPro;
+
+					span { 
+						display: block;
+					}
+				}
+			}
+		}
+	}
 
 	.copyright {
 		clear: both;
@@ -10,14 +66,14 @@ footer {
 		padding: 5px 0;
 		text-align: center;
 		@include border-box;
-		background: #000;
+		background-color: #5ca7dc;
 		.copyright-sign {
 			margin: 0 auto;
-			color: #bababa;
-			font: 400 15px / 22px $HelveticaNeue;
+			color: white;
+			font: 400 13px / 22px $MyriadPro;
 
 			a {
-				color: #bababa;
+				color: #fff;
 
 				&:hover {
 					text-decoration: underline;

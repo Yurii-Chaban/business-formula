@@ -3,64 +3,64 @@
 
 
 @font-face {
-  font-family: 'MyriadPro';
-  src: url('../resources/MyriadPro/Light/MyriadPro-Light.eot');
-  src: url('../resources/MyriadPro/Light/MyriadPro-Light.woff2') format('woff2'),
-       url('../resources/MyriadPro/Light/MyriadPro-Light.woff') format('woff'),
-       url('../resources/MyriadPro/Light/MyriadPro-Light.ttf') format('truetype'),
-       url('../resources/MyriadPro/Light/MyriadPro-Light.svg#MyriadPro-Light') format('svg'),
-       url('../resources/MyriadPro/Light/MyriadPro-Light.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'MyriadPro';
+	src: url('../resources/MyriadPro/Light/MyriadPro-Light.eot');
+	src: url('../resources/MyriadPro/Light/MyriadPro-Light.woff2') format('woff2'),
+	url('../resources/MyriadPro/Light/MyriadPro-Light.woff') format('woff'),
+	url('../resources/MyriadPro/Light/MyriadPro-Light.ttf') format('truetype'),
+	url('../resources/MyriadPro/Light/MyriadPro-Light.svg#MyriadPro-Light') format('svg'),
+	url('../resources/MyriadPro/Light/MyriadPro-Light.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'MyriadPro';
-  src: url('..resources/MyriadPro/Semibold/MyriadPro-Semibold.eot');
-  src: url('..resources/MyriadPro/Semibold/MyriadPro-Semibold.woff2') format('woff2'),
-       url('..resources/MyriadPro/Semibold/MyriadPro-Semibold.woff') format('woff'),
-       url('..resources/MyriadPro/Semibold/MyriadPro-Semibold.ttf') format('truetype'),
-       url('..resources/MyriadPro/Semibold/MyriadPro-Semibold.svg#MyriadPro-Semibold') format('svg'),
-       url('..resources/MyriadPro/Semibold/MyriadPro-Semibold.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'MyriadPro';
+	src: url('../resources/MyriadPro/Semibold/MyriadPro-Semibold.eot');
+	src: url('../resources/MyriadPro/Semibold/MyriadPro-Semibold.woff2') format('woff2'),
+	url('../resources/MyriadPro/Semibold/MyriadPro-Semibold.woff') format('woff'),
+	url('../resources/MyriadPro/Semibold/MyriadPro-Semibold.ttf') format('truetype'),
+	url('../resources/MyriadPro/Semibold/MyriadPro-Semibold.svg#MyriadPro-Semibold') format('svg'),
+	url('../resources/MyriadPro/Semibold/MyriadPro-Semibold.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'MyriadPro';
-  src: url('..resources/MyriadPro/Regular/MyriadPro-Regular.eot');
-  src: url('..resources/MyriadPro/Regular/MyriadPro-Regular.woff2') format('woff2'),
-       url('..resources/MyriadPro/Regular/MyriadPro-Regular.woff') format('woff'),
-       url('..resources/MyriadPro/Regular/MyriadPro-Regular.ttf') format('truetype'),
-       url('..resources/MyriadPro/Regular/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg'),
-       url('..resources/MyriadPro/Regular/MyriadPro-Regular.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'MyriadPro';
+	src: url('../resources/MyriadPro/Regular/MyriadPro-Regular.eot');
+	src: url('../resources/MyriadPro/Regular/MyriadPro-Regular.woff2') format('woff2'),
+	url('../resources/MyriadPro/Regular/MyriadPro-Regular.woff') format('woff'),
+	url('../resources/MyriadPro/Regular/MyriadPro-Regular.ttf') format('truetype'),
+	url('../resources/MyriadPro/Regular/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg'),
+	url('../resources/MyriadPro/Regular/MyriadPro-Regular.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('..resources//Montserrat/Regular/Montserrat-Regular.eot');
-  src: url('..resources//Montserrat/Regular/Montserrat-Regular.woff2') format('woff2'),
-       url('..resources//Montserrat/Regular/Montserrat-Regular.woff') format('woff'),
-       url('..resources//Montserrat/Regular/Montserrat-Regular.ttf') format('truetype'),
-       url('..resources//Montserrat/Regular/Montserrat-Regular.svg#Montserrat-Regular') format('svg'),
-       url('..resources//Montserrat/Regular/Montserrat-Regular.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'Montserrat';
+	src: url('../resources//Montserrat/Regular/Montserrat-Regular.eot');
+	src: url('../resources//Montserrat/Regular/Montserrat-Regular.woff2') format('woff2'),
+	url('../resources//Montserrat/Regular/Montserrat-Regular.woff') format('woff'),
+	url('../resources//Montserrat/Regular/Montserrat-Regular.ttf') format('truetype'),
+	url('../resources//Montserrat/Regular/Montserrat-Regular.svg#Montserrat-Regular') format('svg'),
+	url('../resources//Montserrat/Regular/Montserrat-Regular.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 
 
 body {
-	font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+	font-family: 'MyriadPro', 'Arial', 'Helvetica', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	background: #fff;
 }
 
-$Roboto: 'Roboto', sans-serif;
-$HelveticaNeue: 'HelveticaNeue', sans-serif;
+$MyriadPro: 'MyriadPro', sans-serif;
+$Montserrat: 'Montserrat', sans-serif;
 
 @mixin site-container {
 	position: relative;
@@ -97,7 +97,7 @@ $HelveticaNeue: 'HelveticaNeue', sans-serif;
 			padding: 4px 9px;
 			background-color: #68be28;
 			border: 1px solid rgba(0, 0, 0, 0);
-			font: 400 18px / 20px $Roboto;
+			font: 400 18px / 20px;
 			color: #fff;
 			@include transition;
 
@@ -126,7 +126,7 @@ $HelveticaNeue: 'HelveticaNeue', sans-serif;
 		text-align: center;
 		a {
 			color: white;
-			font: 400 15px / 20px $Roboto;
+			font: 400 15px / 20px;
 			text-transform: uppercase;
 		}
 	}
@@ -165,26 +165,20 @@ $HelveticaNeue: 'HelveticaNeue', sans-serif;
 }
 
 @mixin section-title {
-	position: relative;
-	margin: 6px auto 10px;
-	padding: 0 0 16px 0;
+	margin: 0 auto;
 	text-align: center;
 	color: black;
-	font: 400 22px / 26px $Roboto;
-	text-transform: uppercase;
-	
-	span {
-		color: #68be28;
-	}
+	font: 300 24px / 28px $MyriadPro;
 
 	@media (min-width: 768px) {
-		font-size: 35px;
-		line-height: 38px;
+		font-size: 30px;
+		line-height: 32px;
 	}
 }
 
 .wrapper {
 	max-width: 1020px;
+	width: 100%;
 	margin: 0 auto;
 	padding: 0 15px;
 	@include border-box;
@@ -203,6 +197,10 @@ a {
 
 .pagination-list {
 	@include site-pagination;
+}
+
+.mapWrapper {
+	@include mapWrapper;
 }
 
 // include header
