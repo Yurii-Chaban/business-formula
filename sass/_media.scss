@@ -35,6 +35,9 @@
 						line-height: 34px;
 					}
 				}
+				.services-price-btn {
+					margin-top: 90px;
+				}
 			}
 		}
 	}
@@ -226,33 +229,64 @@
 	}
 
 	.services-section {
-		padding: 60px 0 40px;
+		padding: 60px 0 80px;
 		overflow: hidden;
 		.services-list {
+			padding-left: 14px;
 			li {
 				float: left;
+				width: 323px;
 				margin: 48px 0 28px;
+
+				.img-wrapper {
+					width: 323px;
+				}
+
+				.item-title {
+					margin: 21px auto 17px;
+					font-size: 21px;
+					line-height: 23px
+				}
 			}
 		}
 	}
 
 	.why-we-section {
+		padding: 60px 0 29px;
+
+		.section-title {
+			font-size: 42px;
+			line-height: 47px;
+			margin: 13px auto 0;
+			padding-left: 14px;
+		}
+
 		.list-item {
-			margin: 70px auto;
+			margin: 50px auto;
 
 			li {
-				max-width: 460px;
+				max-width: 485px;
 				min-height: 145px;
-				margin: 25px 0 30px;
+				margin: 25px 0 6px;
 
 				&:nth-child(odd) {
 					float: left;
 					clear: left;
+
+					.icon-wrapper {
+						margin: 0 30px 0 14px;
+					}
 				}
 
 				&:nth-child(even) {
 					float: right;
 					clear: right;
+				}
+
+				&:nth-child(5),
+				&:nth-child(6) {
+					margin-top: 11px;
+					margin-bottom: 27px;
 				}
 				.icon-wrapper {
 					float: left;
@@ -272,10 +306,14 @@
 		.after-title {
 			clear: both;
 			text-align: center;
+			overflow: hidden;
+			letter-spacing: -1px;
+			padding-left: 7px;
 		}
 	}
 
 	.stock-section {
+		padding: 13px 0 17px;
 		.section-img-wrapper {
 			height: 518px;
 		}
@@ -286,16 +324,28 @@
 		}
 
 		.position-block {
-			padding: 20% 0 0;
+			padding: 20% 0 0 15px;
 			.small-title {
-				margin: 0 0 30px;
+				margin: 3px 0 21px;
+			}
+			.big-title {
+				letter-spacing: 0.5px;
 			}
 		}
 	}
 
 	.our-employees-section {
+		padding: 60px 0 13px;
+		.section-title {
+			font-size: 44px;
+			line-height: 47px;
+			margin: 17px auto 0;
+			padding-left: 17px;
+			letter-spacing: -1px;
+		}
+
 		.employees-list {
-			margin: 57px auto;
+			margin: 40px auto;
 
 			li {
 				display: inline-block;
@@ -308,7 +358,14 @@
 					margin: 0;
 				}
 
+				.employees-name {
+					margin: 19px 0 1px 9px;
+					letter-spacing: -0.5px;
+				}
 
+				.years-experience {
+					margin: 0 0 0 10px;
+				}
 			}
 		}
 	}
@@ -316,27 +373,46 @@
 	.customer-reviews-section {
 		display: block;
 		@include site-container;
-		padding: 60px 0 40px;
+		padding: 90px 0 40px;
 		background-image: linear-gradient(to top, #e2eff7 0%, #f1f6fa 100%);
 		box-shadow: -0.3px 4px 10px rgba(0, 0, 0, 0.37);
 
+		.section-title {
+			font-size: 45px;
+			line-height: 50px;
+			letter-spacing: -2px;
+			padding-left: 10px;
+		}
+
 		.reviews-list {
 			@include border-box;
-			margin: 70px auto 40px;
+			margin: 67px auto 70px;
 			text-align: center;
 
 			> li {
 				display: inline-block;
 				max-width: 273px;
 				width: 100%;
-				margin: 0 80px 0;
+				margin: 0 55px 0 75px;
 				text-align: left;
 
+				// &:first-child,
+				// &:nth-child(3n+1),
+				// &:last-child,
+				// &:nth-child(3n+3) {
+				// 	margin: 0;
+				// }
+
 				&:first-child,
-				&:nth-child(3n+1),
+				&:nth-child(3n+1) {
+					float: left;
+					margin: 0 0 30px 12px;
+				}
+
 				&:last-child,
 				&:nth-child(3n+3) {
-					margin: 0;
+					float: right;
+					margin: 0 0 30px 12px;
 				}
 
 				.img-wrapper {
@@ -377,7 +453,7 @@
 				}
 
 				.customer-name {
-					margin: 24px 0 12px;
+					margin: 21px 0 6px;
 					color: black;
 					font: 300 25px / 31px $MyriadPro;
 				}
@@ -390,9 +466,9 @@
 				}
 
 				p {
-					margin: 18px 0 0;
+					margin: 11px 0 0;
 					color: black;
-					font: 300 18px / 22px $MyriadPro;
+					font: 300 18px / 25px $MyriadPro;
 				}
 			}
 		}
@@ -403,6 +479,7 @@
 
 		.mapWrapper {
 			position: relative;
+			padding-bottom: 33.25%;
 			.map-overflow {
 				position: absolute;
 				top: 0;
@@ -421,9 +498,13 @@
 	// FOOTER
 
 	footer {
+		padding: 23px 0 0;
 
 		.footer-logo {
 			float: left;
+			.logo-sign {
+				letter-spacing: -0.7px;
+			}
 		}
 
 		.prefooter {
@@ -435,6 +516,11 @@
 				.footer-phone {
 					margin: 0 auto;
 					text-align: left;
+					font-size: 28px;
+				}
+
+				.working-hours {
+					font-size: 24px;
 				}
 
 				.location {
@@ -443,6 +529,7 @@
 			}
 		}
 		.copyright {
+			padding: 3px 0 0 15px;
 			.term-and-privacy {
 				a {
 					display: inline-block;

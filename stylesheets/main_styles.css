@@ -91,7 +91,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: normal;
   font-style: normal;
 }
-/* line 55, ../sass/main_styles.scss */
+/* line 54, ../sass/main_styles.scss */
 body {
   font-family: 'MyriadPro', 'Arial', 'Helvetica', sans-serif;
   font-weight: 400;
@@ -99,7 +99,7 @@ body {
   background: #fff;
 }
 
-/* line 179, ../sass/main_styles.scss */
+/* line 178, ../sass/main_styles.scss */
 .wrapper {
   max-width: 1020px;
   width: 100%;
@@ -112,12 +112,12 @@ body {
   position: relative;
 }
 
-/* line 187, ../sass/main_styles.scss */
+/* line 186, ../sass/main_styles.scss */
 a {
   text-decoration: none;
 }
 
-/* line 190, ../sass/main_styles.scss */
+/* line 189, ../sass/main_styles.scss */
 .direction {
   position: relative;
   width: 100%;
@@ -128,23 +128,23 @@ a {
   padding: 10px 0;
   background-color: #68be28;
 }
-/* line 121, ../sass/main_styles.scss */
+/* line 120, ../sass/main_styles.scss */
 .direction .arrow-back {
   float: left;
 }
-/* line 124, ../sass/main_styles.scss */
+/* line 123, ../sass/main_styles.scss */
 .direction .direction-title {
   margin: 0 auto;
   text-align: center;
 }
-/* line 127, ../sass/main_styles.scss */
+/* line 126, ../sass/main_styles.scss */
 .direction .direction-title a {
   color: white;
   font: 400 15px / 20px;
   text-transform: uppercase;
 }
 
-/* line 194, ../sass/main_styles.scss */
+/* line 193, ../sass/main_styles.scss */
 .section-title {
   margin: 0 auto;
   text-align: center;
@@ -152,14 +152,14 @@ a {
   font: 300 24px/28px "MyriadPro", sans-serif;
 }
 @media (min-width: 768px) {
-  /* line 194, ../sass/main_styles.scss */
+  /* line 193, ../sass/main_styles.scss */
   .section-title {
-    font-size: 30px;
-    line-height: 32px;
+    font-size: 41px;
+    line-height: 47px;
   }
 }
 
-/* line 198, ../sass/main_styles.scss */
+/* line 197, ../sass/main_styles.scss */
 .pagination-list {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -169,12 +169,12 @@ a {
   margin: 34px auto 31px;
   text-align: center;
 }
-/* line 91, ../sass/main_styles.scss */
+/* line 90, ../sass/main_styles.scss */
 .pagination-list li {
   display: inline-block;
   margin: 0 3px;
 }
-/* line 95, ../sass/main_styles.scss */
+/* line 94, ../sass/main_styles.scss */
 .pagination-list li a {
   display: block;
   padding: 4px 9px;
@@ -187,27 +187,27 @@ a {
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
-/* line 104, ../sass/main_styles.scss */
+/* line 103, ../sass/main_styles.scss */
 .pagination-list li a:hover {
   color: #68be28;
   background-color: #fff;
   border-color: #68be28;
 }
-/* line 110, ../sass/main_styles.scss */
+/* line 109, ../sass/main_styles.scss */
 .pagination-list li a.pagination-active {
   color: #68be28;
   background-color: #fff;
   border-color: #68be28;
 }
 
-/* line 202, ../sass/main_styles.scss */
+/* line 201, ../sass/main_styles.scss */
 .mapWrapper {
   overflow: hidden;
   padding-bottom: 56.25%;
   position: relative;
   height: 0;
 }
-/* line 141, ../sass/main_styles.scss */
+/* line 140, ../sass/main_styles.scss */
 .mapWrapper iframe {
   left: 0;
   top: 0;
@@ -635,11 +635,13 @@ footer .copyright .copyright-sign a:hover {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 20%;
+  bottom: 0;
+  top: 100%;
   z-index: 2;
   display: block;
   width: 268px;
   height: 48px;
+  margin-top: 55px;
   color: white;
   text-align: center;
   font: 600 18px/48px "MyriadPro", sans-serif;
@@ -649,7 +651,7 @@ footer .copyright .copyright-sign a:hover {
   border-radius: 23px;
 }
 
-/* line 84, ../sass/_main-page.scss */
+/* line 86, ../sass/_main-page.scss */
 .services-section {
   position: relative;
   width: 100%;
@@ -661,7 +663,7 @@ footer .copyright .copyright-sign a:hover {
   background-image: linear-gradient(to top, #f3f8fc 0%, #f3f8fc 100%);
   box-shadow: -0.1px 2px 5px rgba(13, 14, 14, 0.18);
 }
-/* line 91, ../sass/_main-page.scss */
+/* line 93, ../sass/_main-page.scss */
 .services-section .services-list {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -670,7 +672,7 @@ footer .copyright .copyright-sign a:hover {
   margin: 0 auto;
   text-align: center;
 }
-/* line 96, ../sass/_main-page.scss */
+/* line 98, ../sass/_main-page.scss */
 .services-section .services-list li {
   display: block;
   overflow: hidden;
@@ -687,16 +689,16 @@ footer .copyright .copyright-sign a:hover {
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
-/* line 109, ../sass/_main-page.scss */
+/* line 111, ../sass/_main-page.scss */
 .services-section .services-list li:hover {
   background-color: #3aace2;
   box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.36);
 }
-/* line 113, ../sass/_main-page.scss */
+/* line 115, ../sass/_main-page.scss */
 .services-section .services-list li:hover .item-title {
   color: #fff;
 }
-/* line 118, ../sass/_main-page.scss */
+/* line 120, ../sass/_main-page.scss */
 .services-section .services-list li .item-title {
   margin: 14px auto 10px;
   text-align: center;
@@ -707,7 +709,7 @@ footer .copyright .copyright-sign a:hover {
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
-/* line 126, ../sass/_main-page.scss */
+/* line 128, ../sass/_main-page.scss */
 .services-section .services-list li .img-wrapper {
   width: 269px;
   height: 268px;
@@ -726,7 +728,7 @@ footer .copyright .copyright-sign a:hover {
   -webkit-align-items: center;
   align-items: center;
 }
-/* line 144, ../sass/_main-page.scss */
+/* line 146, ../sass/_main-page.scss */
 .services-section .services-list li .img-wrapper img {
   min-height: auto;
   height: 100%;
@@ -739,7 +741,7 @@ footer .copyright .copyright-sign a:hover {
   -ms-transform: translate(-50%, -50%);
 }
 
-/* line 159, ../sass/_main-page.scss */
+/* line 161, ../sass/_main-page.scss */
 .why-we-section {
   position: relative;
   width: 100%;
@@ -750,7 +752,7 @@ footer .copyright .copyright-sign a:hover {
   padding: 20px 0;
   background: #fff;
 }
-/* line 165, ../sass/_main-page.scss */
+/* line 167, ../sass/_main-page.scss */
 .why-we-section .list-item {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -759,7 +761,7 @@ footer .copyright .copyright-sign a:hover {
   margin: 0 auto;
   text-align: center;
 }
-/* line 170, ../sass/_main-page.scss */
+/* line 172, ../sass/_main-page.scss */
 .why-we-section .list-item li {
   display: block;
   max-width: 265px;
@@ -767,7 +769,7 @@ footer .copyright .copyright-sign a:hover {
   overflow: hidden;
   margin: 25px auto 33px;
 }
-/* line 177, ../sass/_main-page.scss */
+/* line 179, ../sass/_main-page.scss */
 .why-we-section .list-item li .icon-wrapper {
   width: 75px;
   height: 75px;
@@ -776,26 +778,26 @@ footer .copyright .copyright-sign a:hover {
   border-radius: 15px;
   text-align: center;
 }
-/* line 185, ../sass/_main-page.scss */
+/* line 187, ../sass/_main-page.scss */
 .why-we-section .list-item li .icon-wrapper img {
   display: block;
   max-width: 100%;
   height: auto;
-  margin: 15px auto 0;
+  margin: 17px auto 0;
 }
-/* line 193, ../sass/_main-page.scss */
+/* line 195, ../sass/_main-page.scss */
 .why-we-section .list-item li .item-title {
   margin: 12px auto 10px;
   text-align: center;
   color: black;
   font: 300 23px/26px "MyriadPro", sans-serif;
 }
-/* line 200, ../sass/_main-page.scss */
+/* line 202, ../sass/_main-page.scss */
 .why-we-section .list-item li p, .why-we-section .list-item li .item-content {
   color: #505050;
   font: 300 17px/20px "MyriadPro", sans-serif;
 }
-/* line 207, ../sass/_main-page.scss */
+/* line 209, ../sass/_main-page.scss */
 .why-we-section .after-title {
   margin: 15px auto 30px;
   text-align: center;
@@ -803,7 +805,7 @@ footer .copyright .copyright-sign a:hover {
   font: 300 23px/26px "MyriadPro", sans-serif;
 }
 
-/* line 215, ../sass/_main-page.scss */
+/* line 217, ../sass/_main-page.scss */
 .stock-section {
   position: relative;
   width: 100%;
@@ -814,7 +816,7 @@ footer .copyright .copyright-sign a:hover {
   padding: 13px 0;
   background: #4e99d2;
 }
-/* line 221, ../sass/_main-page.scss */
+/* line 223, ../sass/_main-page.scss */
 .stock-section .section-img-wrapper {
   position: relative;
   width: 100%;
@@ -838,7 +840,7 @@ footer .copyright .copyright-sign a:hover {
   align-items: center;
   overflow: hidden;
 }
-/* line 244, ../sass/_main-page.scss */
+/* line 246, ../sass/_main-page.scss */
 .stock-section .section-img-wrapper .position-img {
   min-height: auto;
   height: 100%;
@@ -852,7 +854,7 @@ footer .copyright .copyright-sign a:hover {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 259, ../sass/_main-page.scss */
+/* line 261, ../sass/_main-page.scss */
 .stock-section .under-layer {
   position: absolute;
   width: 100%;
@@ -861,23 +863,23 @@ footer .copyright .copyright-sign a:hover {
   background-size: cover;
   background-position: top left;
 }
-/* line 268, ../sass/_main-page.scss */
+/* line 270, ../sass/_main-page.scss */
 .stock-section .position-block {
   padding: 15% 0 0;
 }
-/* line 270, ../sass/_main-page.scss */
+/* line 272, ../sass/_main-page.scss */
 .stock-section .position-block .small-title {
   margin: 0 0 5%;
   color: #e7d99b;
   font: 300 24px/26px "MyriadPro", sans-serif;
 }
-/* line 276, ../sass/_main-page.scss */
+/* line 278, ../sass/_main-page.scss */
 .stock-section .position-block .big-title {
   color: white;
   font: 400 43px/57px "MyriadPro", sans-serif;
 }
 
-/* line 282, ../sass/_main-page.scss */
+/* line 284, ../sass/_main-page.scss */
 .our-employees-section {
   position: relative;
   width: 100%;
@@ -888,7 +890,7 @@ footer .copyright .copyright-sign a:hover {
   padding: 20px 0;
   background: #fff;
 }
-/* line 287, ../sass/_main-page.scss */
+/* line 289, ../sass/_main-page.scss */
 .our-employees-section .employees-list {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -897,7 +899,7 @@ footer .copyright .copyright-sign a:hover {
   margin: 0 auto;
   text-align: center;
 }
-/* line 292, ../sass/_main-page.scss */
+/* line 294, ../sass/_main-page.scss */
 .our-employees-section .employees-list li {
   max-width: 271px;
   width: 100%;
@@ -905,10 +907,10 @@ footer .copyright .copyright-sign a:hover {
   margin: 17px auto 30px;
   text-align: left;
 }
-/* line 299, ../sass/_main-page.scss */
+/* line 301, ../sass/_main-page.scss */
 .our-employees-section .employees-list li .img-wrapper {
   width: 271px;
-  height: 433px;
+  height: 423px;
   position: relative;
   box-shadow: -0.3px 4px 8px rgba(0, 0, 0, 0.56);
   -webkit-border-radius: 10px;
@@ -929,7 +931,7 @@ footer .copyright .copyright-sign a:hover {
   overflow: hidden;
   border-bottom: 11px solid #4e99d2;
 }
-/* line 322, ../sass/_main-page.scss */
+/* line 324, ../sass/_main-page.scss */
 .our-employees-section .employees-list li .img-wrapper img {
   min-height: auto;
   height: 100%;
@@ -943,19 +945,19 @@ footer .copyright .copyright-sign a:hover {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 337, ../sass/_main-page.scss */
+/* line 339, ../sass/_main-page.scss */
 .our-employees-section .employees-list li .employees-name {
   margin: 21px 0 14px;
   color: black;
   font: 300 29px/32px "MyriadPro", sans-serif;
 }
-/* line 343, ../sass/_main-page.scss */
+/* line 345, ../sass/_main-page.scss */
 .our-employees-section .employees-list li .years-experience {
   color: #999;
   font: 300 20px/22px "MyriadPro", sans-serif;
 }
 
-/* line 350, ../sass/_main-page.scss */
+/* line 352, ../sass/_main-page.scss */
 .customer-reviews-section,
 .map-section {
   display: none;
@@ -987,50 +989,54 @@ footer .copyright .copyright-sign a:hover {
     font-size: 31px;
     line-height: 34px;
   }
+  /* line 38, ../sass/_media.scss */
+  .page-slider .swiper-container-home-page .swiper-slide .services-price-btn {
+    margin-top: 90px;
+  }
 
-  /* line 42, ../sass/_media.scss */
+  /* line 45, ../sass/_media.scss */
   .services-section {
     padding: 60px 0 40px;
   }
-  /* line 45, ../sass/_media.scss */
+  /* line 48, ../sass/_media.scss */
   .services-section .services-list li {
     width: 326px;
     height: 326px;
   }
-  /* line 49, ../sass/_media.scss */
+  /* line 52, ../sass/_media.scss */
   .services-section .services-list li .img-wrapper {
     width: 326px;
     height: 326px;
   }
 
-  /* line 57, ../sass/_media.scss */
+  /* line 60, ../sass/_media.scss */
   .why-we-section {
     padding: 60px 0 40px;
   }
-  /* line 60, ../sass/_media.scss */
+  /* line 63, ../sass/_media.scss */
   .why-we-section .list-item li {
     display: inline-block;
     vertical-align: top;
     margin: 25px 20px 33px;
   }
 
-  /* line 69, ../sass/_media.scss */
+  /* line 72, ../sass/_media.scss */
   .stock-section .section-img-wrapper {
     height: 340px;
   }
 
-  /* line 74, ../sass/_media.scss */
+  /* line 77, ../sass/_media.scss */
   .our-employees-section {
     padding: 60px 0 40px;
   }
 }
 @media (min-width: 1024px) {
-  /* line 82, ../sass/_media.scss */
+  /* line 85, ../sass/_media.scss */
   .direction {
     display: none;
   }
 
-  /* line 87, ../sass/_media.scss */
+  /* line 90, ../sass/_media.scss */
   header {
     position: absolute;
     top: 0;
@@ -1043,32 +1049,32 @@ footer .copyright .copyright-sign a:hover {
     background: rgba(255, 255, 255, 0.1);
     box-shadow: inherit;
   }
-  /* line 100, ../sass/_media.scss */
+  /* line 103, ../sass/_media.scss */
   header .dropdovn-menu-mobile,
   header .call-us-block {
     display: none;
   }
-  /* line 106, ../sass/_media.scss */
+  /* line 109, ../sass/_media.scss */
   header .logo-with-menu {
     width: 100%;
     height: auto;
     padding: 14px 0 0;
     overflow: hidden;
   }
-  /* line 113, ../sass/_media.scss */
+  /* line 116, ../sass/_media.scss */
   header .block-logo {
     float: left;
   }
-  /* line 116, ../sass/_media.scss */
+  /* line 119, ../sass/_media.scss */
   header .block-logo .logo-sign {
     letter-spacing: -1px;
   }
-  /* line 121, ../sass/_media.scss */
+  /* line 124, ../sass/_media.scss */
   header .desctop-info-block {
     display: block;
     float: right;
   }
-  /* line 124, ../sass/_media.scss */
+  /* line 127, ../sass/_media.scss */
   header .desctop-info-block .header-phone {
     display: block;
     margin: 0 5px 0 0;
@@ -1076,14 +1082,14 @@ footer .copyright .copyright-sign a:hover {
     color: black;
     font: 300 27px/30px "MyriadPro", sans-serif;
   }
-  /* line 132, ../sass/_media.scss */
+  /* line 135, ../sass/_media.scss */
   header .desctop-info-block .day-and-hours {
     margin: 10px 0 0;
     text-align: center;
     color: black;
     font: 300 24px/25px "MyriadPro", sans-serif;
   }
-  /* line 138, ../sass/_media.scss */
+  /* line 141, ../sass/_media.scss */
   header .desctop-info-block .free-consultation-btn {
     display: block;
     margin: 11px auto 0;
@@ -1097,21 +1103,21 @@ footer .copyright .copyright-sign a:hover {
     -moz-border-radius: 20px;
     border-radius: 20px;
   }
-  /* line 153, ../sass/_media.scss */
+  /* line 156, ../sass/_media.scss */
   header .main-menu {
     display: block;
     width: auto;
     height: auto;
     overflow: hidden;
   }
-  /* line 159, ../sass/_media.scss */
+  /* line 162, ../sass/_media.scss */
   header .main-menu .list-menu {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 162, ../sass/_media.scss */
+  /* line 165, ../sass/_media.scss */
   header .main-menu .list-menu li {
     display: block;
     float: left;
@@ -1119,15 +1125,15 @@ footer .copyright .copyright-sign a:hover {
     height: 66px;
     margin: 0 15px;
   }
-  /* line 169, ../sass/_media.scss */
+  /* line 172, ../sass/_media.scss */
   header .main-menu .list-menu li:first-child {
     margin-left: 0;
   }
-  /* line 173, ../sass/_media.scss */
+  /* line 176, ../sass/_media.scss */
   header .main-menu .list-menu li:last-child {
     margin: 0;
   }
-  /* line 177, ../sass/_media.scss */
+  /* line 180, ../sass/_media.scss */
   header .main-menu .list-menu li a {
     display: block;
     width: 100%;
@@ -1139,20 +1145,20 @@ footer .copyright .copyright-sign a:hover {
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
   }
-  /* line 188, ../sass/_media.scss */
+  /* line 191, ../sass/_media.scss */
   header .main-menu .list-menu li a:hover {
     border-bottom: 5px solid #68be28;
   }
-  /* line 192, ../sass/_media.scss */
+  /* line 195, ../sass/_media.scss */
   header .main-menu .list-menu li a.desctop-menu-active {
     border-bottom: 5px solid #68be28;
   }
 
-  /* line 200, ../sass/_media.scss */
+  /* line 203, ../sass/_media.scss */
   .page-slider .swiper-container-home-page {
     height: 627px;
   }
-  /* line 203, ../sass/_media.scss */
+  /* line 206, ../sass/_media.scss */
   .page-slider .swiper-container-home-page .swiper-slide .slider-title {
     top: 50%;
     left: 31%;
@@ -1160,13 +1166,13 @@ footer .copyright .copyright-sign a:hover {
     margin-top: -33px;
     margin-left: 2px;
   }
-  /* line 209, ../sass/_media.scss */
+  /* line 212, ../sass/_media.scss */
   .page-slider .swiper-container-home-page .swiper-slide .slider-title a {
     font-size: 38px;
     line-height: 53px;
     text-align: left;
   }
-  /* line 215, ../sass/_media.scss */
+  /* line 218, ../sass/_media.scss */
   .page-slider .swiper-container-home-page .swiper-slide .services-price-btn {
     left: 18%;
     margin-top: 79px;
@@ -1177,92 +1183,159 @@ footer .copyright .copyright-sign a:hover {
     bottom: 0;
   }
 
-  /* line 228, ../sass/_media.scss */
+  /* line 231, ../sass/_media.scss */
   .services-section {
-    padding: 60px 0 40px;
+    padding: 60px 0 80px;
     overflow: hidden;
   }
-  /* line 232, ../sass/_media.scss */
+  /* line 234, ../sass/_media.scss */
+  .services-section .services-list {
+    padding-left: 14px;
+  }
+  /* line 236, ../sass/_media.scss */
   .services-section .services-list li {
     float: left;
+    width: 323px;
     margin: 48px 0 28px;
   }
+  /* line 241, ../sass/_media.scss */
+  .services-section .services-list li .img-wrapper {
+    width: 323px;
+  }
+  /* line 245, ../sass/_media.scss */
+  .services-section .services-list li .item-title {
+    margin: 21px auto 17px;
+    font-size: 21px;
+    line-height: 23px;
+  }
 
-  /* line 240, ../sass/_media.scss */
+  /* line 254, ../sass/_media.scss */
+  .why-we-section {
+    padding: 60px 0 29px;
+  }
+  /* line 257, ../sass/_media.scss */
+  .why-we-section .section-title {
+    font-size: 42px;
+    line-height: 47px;
+    margin: 13px auto 0;
+    padding-left: 14px;
+  }
+  /* line 264, ../sass/_media.scss */
   .why-we-section .list-item {
-    margin: 70px auto;
+    margin: 50px auto;
   }
-  /* line 243, ../sass/_media.scss */
+  /* line 267, ../sass/_media.scss */
   .why-we-section .list-item li {
-    max-width: 460px;
+    max-width: 485px;
     min-height: 145px;
-    margin: 25px 0 30px;
+    margin: 25px 0 6px;
   }
-  /* line 248, ../sass/_media.scss */
+  /* line 272, ../sass/_media.scss */
   .why-we-section .list-item li:nth-child(odd) {
     float: left;
     clear: left;
   }
-  /* line 253, ../sass/_media.scss */
+  /* line 276, ../sass/_media.scss */
+  .why-we-section .list-item li:nth-child(odd) .icon-wrapper {
+    margin: 0 30px 0 14px;
+  }
+  /* line 281, ../sass/_media.scss */
   .why-we-section .list-item li:nth-child(even) {
     float: right;
     clear: right;
   }
-  /* line 257, ../sass/_media.scss */
+  /* line 286, ../sass/_media.scss */
+  .why-we-section .list-item li:nth-child(5), .why-we-section .list-item li:nth-child(6) {
+    margin-top: 11px;
+    margin-bottom: 27px;
+  }
+  /* line 291, ../sass/_media.scss */
   .why-we-section .list-item li .icon-wrapper {
     float: left;
     margin: 0 30px 0 0;
   }
-  /* line 261, ../sass/_media.scss */
+  /* line 295, ../sass/_media.scss */
   .why-we-section .list-item li .overflow-content {
     overflow: hidden;
     text-align: left;
   }
-  /* line 266, ../sass/_media.scss */
+  /* line 300, ../sass/_media.scss */
   .why-we-section .list-item li .item-title {
     margin: 0 0 10px;
     text-align: left;
   }
-  /* line 272, ../sass/_media.scss */
+  /* line 306, ../sass/_media.scss */
   .why-we-section .after-title {
     clear: both;
     text-align: center;
+    overflow: hidden;
+    letter-spacing: -1px;
+    padding-left: 7px;
   }
 
-  /* line 279, ../sass/_media.scss */
+  /* line 315, ../sass/_media.scss */
+  .stock-section {
+    padding: 13px 0 17px;
+  }
+  /* line 317, ../sass/_media.scss */
   .stock-section .section-img-wrapper {
     height: 518px;
   }
-  /* line 282, ../sass/_media.scss */
+  /* line 320, ../sass/_media.scss */
   .stock-section .under-layer {
     background: url("../images/under-layer-desctop.png") no-repeat;
     background-size: cover;
     background-position: left;
   }
-  /* line 288, ../sass/_media.scss */
+  /* line 326, ../sass/_media.scss */
   .stock-section .position-block {
-    padding: 20% 0 0;
+    padding: 20% 0 0 15px;
   }
-  /* line 290, ../sass/_media.scss */
+  /* line 328, ../sass/_media.scss */
   .stock-section .position-block .small-title {
-    margin: 0 0 30px;
+    margin: 3px 0 21px;
+  }
+  /* line 331, ../sass/_media.scss */
+  .stock-section .position-block .big-title {
+    letter-spacing: 0.5px;
   }
 
-  /* line 297, ../sass/_media.scss */
-  .our-employees-section .employees-list {
-    margin: 57px auto;
+  /* line 337, ../sass/_media.scss */
+  .our-employees-section {
+    padding: 60px 0 13px;
   }
-  /* line 300, ../sass/_media.scss */
+  /* line 339, ../sass/_media.scss */
+  .our-employees-section .section-title {
+    font-size: 44px;
+    line-height: 47px;
+    margin: 17px auto 0;
+    padding-left: 17px;
+    letter-spacing: -1px;
+  }
+  /* line 347, ../sass/_media.scss */
+  .our-employees-section .employees-list {
+    margin: 40px auto;
+  }
+  /* line 350, ../sass/_media.scss */
   .our-employees-section .employees-list li {
     display: inline-block;
     margin: 17px 80px 30px;
   }
-  /* line 304, ../sass/_media.scss */
+  /* line 354, ../sass/_media.scss */
   .our-employees-section .employees-list li:first-child, .our-employees-section .employees-list li:nth-child(3n+1), .our-employees-section .employees-list li:last-child, .our-employees-section .employees-list li:nth-child(3n+3) {
     margin: 0;
   }
+  /* line 361, ../sass/_media.scss */
+  .our-employees-section .employees-list li .employees-name {
+    margin: 19px 0 1px 9px;
+    letter-spacing: -0.5px;
+  }
+  /* line 366, ../sass/_media.scss */
+  .our-employees-section .employees-list li .years-experience {
+    margin: 0 0 0 10px;
+  }
 
-  /* line 316, ../sass/_media.scss */
+  /* line 373, ../sass/_media.scss */
   .customer-reviews-section {
     display: block;
     position: relative;
@@ -1271,32 +1344,45 @@ footer .copyright .copyright-sign a:hover {
     margin: auto;
     background-size: contain;
     background-position: center;
-    padding: 60px 0 40px;
+    padding: 90px 0 40px;
     background-image: linear-gradient(to top, #e2eff7 0%, #f1f6fa 100%);
     box-shadow: -0.3px 4px 10px rgba(0, 0, 0, 0.37);
   }
-  /* line 323, ../sass/_media.scss */
+  /* line 380, ../sass/_media.scss */
+  .customer-reviews-section .section-title {
+    font-size: 45px;
+    line-height: 50px;
+    letter-spacing: -2px;
+    padding-left: 10px;
+  }
+  /* line 387, ../sass/_media.scss */
   .customer-reviews-section .reviews-list {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 70px auto 40px;
+    margin: 67px auto 70px;
     text-align: center;
   }
-  /* line 328, ../sass/_media.scss */
+  /* line 392, ../sass/_media.scss */
   .customer-reviews-section .reviews-list > li {
     display: inline-block;
     max-width: 273px;
     width: 100%;
-    margin: 0 80px 0;
+    margin: 0 55px 0 75px;
     text-align: left;
   }
-  /* line 335, ../sass/_media.scss */
-  .customer-reviews-section .reviews-list > li:first-child, .customer-reviews-section .reviews-list > li:nth-child(3n+1), .customer-reviews-section .reviews-list > li:last-child, .customer-reviews-section .reviews-list > li:nth-child(3n+3) {
-    margin: 0;
+  /* line 406, ../sass/_media.scss */
+  .customer-reviews-section .reviews-list > li:first-child, .customer-reviews-section .reviews-list > li:nth-child(3n+1) {
+    float: left;
+    margin: 0 0 30px 12px;
   }
-  /* line 342, ../sass/_media.scss */
+  /* line 412, ../sass/_media.scss */
+  .customer-reviews-section .reviews-list > li:last-child, .customer-reviews-section .reviews-list > li:nth-child(3n+3) {
+    float: right;
+    margin: 0 0 30px 12px;
+  }
+  /* line 418, ../sass/_media.scss */
   .customer-reviews-section .reviews-list > li .img-wrapper {
     width: 125px;
     height: 125px;
@@ -1319,7 +1405,7 @@ footer .copyright .copyright-sign a:hover {
     align-items: center;
     overflow: hidden;
   }
-  /* line 364, ../sass/_media.scss */
+  /* line 440, ../sass/_media.scss */
   .customer-reviews-section .reviews-list > li .img-wrapper .position-img {
     min-height: auto;
     height: 100%;
@@ -1333,39 +1419,40 @@ footer .copyright .copyright-sign a:hover {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
-  /* line 379, ../sass/_media.scss */
+  /* line 455, ../sass/_media.scss */
   .customer-reviews-section .reviews-list > li .customer-name {
-    margin: 24px 0 12px;
+    margin: 21px 0 6px;
     color: black;
     font: 300 25px/31px "MyriadPro", sans-serif;
   }
-  /* line 385, ../sass/_media.scss */
+  /* line 461, ../sass/_media.scss */
   .customer-reviews-section .reviews-list > li .rating-list {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 387, ../sass/_media.scss */
+  /* line 463, ../sass/_media.scss */
   .customer-reviews-section .reviews-list > li .rating-list li {
     display: inline-block;
   }
-  /* line 392, ../sass/_media.scss */
+  /* line 468, ../sass/_media.scss */
   .customer-reviews-section .reviews-list > li p {
-    margin: 18px 0 0;
+    margin: 11px 0 0;
     color: black;
-    font: 300 18px/22px "MyriadPro", sans-serif;
+    font: 300 18px/25px "MyriadPro", sans-serif;
   }
 
-  /* line 401, ../sass/_media.scss */
+  /* line 477, ../sass/_media.scss */
   .map-section {
     display: block;
   }
-  /* line 404, ../sass/_media.scss */
+  /* line 480, ../sass/_media.scss */
   .map-section .mapWrapper {
     position: relative;
+    padding-bottom: 33.25%;
   }
-  /* line 406, ../sass/_media.scss */
+  /* line 483, ../sass/_media.scss */
   .map-section .mapWrapper .map-overflow {
     position: absolute;
     top: 0;
@@ -1377,50 +1464,67 @@ footer .copyright .copyright-sign a:hover {
     cursor: pointer;
   }
 
-  /* line 425, ../sass/_media.scss */
+  /* line 500, ../sass/_media.scss */
+  footer {
+    padding: 23px 0 0;
+  }
+  /* line 503, ../sass/_media.scss */
   footer .footer-logo {
     float: left;
   }
-  /* line 429, ../sass/_media.scss */
+  /* line 505, ../sass/_media.scss */
+  footer .footer-logo .logo-sign {
+    letter-spacing: -0.7px;
+  }
+  /* line 510, ../sass/_media.scss */
   footer .prefooter {
     overflow: hidden;
     padding-bottom: 20px;
   }
-  /* line 432, ../sass/_media.scss */
+  /* line 513, ../sass/_media.scss */
   footer .prefooter .right-block {
     float: right;
   }
-  /* line 435, ../sass/_media.scss */
+  /* line 516, ../sass/_media.scss */
   footer .prefooter .right-block .footer-phone {
     margin: 0 auto;
     text-align: left;
+    font-size: 28px;
   }
-  /* line 440, ../sass/_media.scss */
+  /* line 522, ../sass/_media.scss */
+  footer .prefooter .right-block .working-hours {
+    font-size: 24px;
+  }
+  /* line 526, ../sass/_media.scss */
   footer .prefooter .right-block .location {
     display: none;
   }
-  /* line 447, ../sass/_media.scss */
+  /* line 531, ../sass/_media.scss */
+  footer .copyright {
+    padding: 3px 0 0 15px;
+  }
+  /* line 534, ../sass/_media.scss */
   footer .copyright .term-and-privacy a {
     display: inline-block;
     margin: 0 10px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 458, ../sass/_media.scss */
+  /* line 545, ../sass/_media.scss */
   .page-slider .swiper-container-home-page .swiper-button-next {
     right: 12%;
   }
-  /* line 461, ../sass/_media.scss */
+  /* line 548, ../sass/_media.scss */
   .page-slider .swiper-container-home-page .swiper-button-prev {
     left: 16%;
   }
 }
 @media (min-width: 1800px) {
-  /* line 471, ../sass/_media.scss */
+  /* line 558, ../sass/_media.scss */
   .page-slider .swiper-container-home-page .swiper-button-next {
     right: 24%;
   }
-  /* line 474, ../sass/_media.scss */
+  /* line 561, ../sass/_media.scss */
   .page-slider .swiper-container-home-page .swiper-button-prev {
     left: 27%;
   }
