@@ -1,0 +1,103 @@
+.blog-page {
+	@include site-container;
+	padding: 20px 0;
+
+	.section-title {
+		display: none;
+	}
+
+	.blog-list {
+		@include border-box;
+		margin: 0 auto;
+		text-align: center;
+
+		li {
+			display: block;
+			max-width: 449px;
+			width: 100%;
+			margin: 50px auto;
+			text-align: left;
+			overflow: hidden;
+
+			&:nth-child(n+4) {
+				display: none;
+			}
+
+			.img-wrapper {
+				width: 182px;
+				height: 276px;
+				margin: 0 auto;
+				-webkit-border-radius: 10px;
+				-moz-border-radius: 10px;
+				border-radius: 10px;
+				overflow: hidden;
+				position: relative;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+				box-shadow: -0.3px 4px 6px rgba(0, 0, 0, 0.39);
+
+				img {
+					min-height: auto;
+					height: 100%;
+					min-width: auto;
+					max-width: none;
+					width: auto;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					-webkit-transform: translate(-50%, -50%);
+					-ms-transform: translate(-50%, -50%);
+					transform: translate(-50%, -50%);
+				}
+			}
+
+			.item-title {
+				margin: 20px 0 13px;
+				color: black;
+				font: 300 29px / 31px $MyriadPro;
+			}
+
+			.post-date {
+				margin: 0 0 16px;
+				color: #999;
+				font: 300 20px / 22px $MyriadPro;
+			}
+
+			.item-content {
+				font: 300 18px / 22px $MyriadPro;
+				color: #505050;
+			}
+
+			.blog-more-btn {
+				display: block;
+				float: right;
+				width: 112px;
+				height: 27px;
+				margin: 12px 11px 0 0;
+				text-align: center;
+				color: #828282;
+				font: 400 15px / 27px $MyriadPro;
+				border: 0.86px solid #828282;
+				-webkit-border-radius: 20px;
+				-moz-border-radius: 20px;
+				border-radius: 20px;
+				@include transition;
+
+				&:hover {
+					color: #4a96cf;
+					border-color: #4a96cf;
+				}
+			}
+		}
+	}
+}

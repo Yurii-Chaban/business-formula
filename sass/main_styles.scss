@@ -89,27 +89,42 @@ $Montserrat: 'Montserrat', sans-serif;
 
 	li {
 		display: inline-block;
-		margin: 0 3px;
+		margin: 0 6px;
 
 		a {
 			display: block;
-			padding: 4px 9px;
-			background-color: #68be28;
-			border: 1px solid rgba(0, 0, 0, 0);
-			font: 400 18px / 20px;
-			color: #fff;
+			color: #828282;
+			font: 400 18px / 20px $MyriadPro;
 			@include transition;
 
 			&:hover {
-				color: #68be28;
-				background-color: #fff;
-				border-color: #68be28;
+				color: #5ca7dc;
 			}
 		}
 		a.pagination-active {
-			color: #68be28;
-			background-color: #fff;
-			border-color: #68be28;
+			color: #5ca7dc;
+		}
+	}
+	.desctop {
+		display: none;
+	}
+	@media (min-width: 1024px) {
+		margin: 72px auto 16px;
+		padding-left: 15px;
+
+		li {
+			margin: 0 5px;
+
+			a {
+				font-size: 19px;
+			}
+		}
+
+		.mobile {
+			display: none;
+		}
+		.desctop {
+			display: inline-block;
 		}
 	}
 }
@@ -143,6 +158,16 @@ $Montserrat: 'Montserrat', sans-serif;
 		height:100%;
 		width:100%;
 		position:absolute;
+	}
+	.map-overflow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 99;
+		width: 100%;
+		height: 100%;
+		display: block;
+		cursor: pointer;
 	}
 }
 
@@ -208,5 +233,6 @@ a {
 @import "menu";
 @import "main-page";
 @import "about-page";
+@import "blog-page";
 
 @import "media";
