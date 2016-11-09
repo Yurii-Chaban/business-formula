@@ -82,3 +82,42 @@ footer {
 		}
 	}
 }
+
+.inside-page-footer {
+	.navigations-menu-block {
+		.footer-main-menu,
+		.footer-services-menu {
+			display: none;
+		}
+
+		.information-block {
+			.footer-phone {
+				display: block;
+				margin: 25px auto 0;
+				text-align: center;
+				color: black;
+				font: 300 21px / 35px $MyriadPro;
+			}
+
+			.working-hours {
+				margin: 0 auto;
+				text-align: center;
+				color: black;
+				font: 300 21px / 35px $MyriadPro;
+			}
+			.location {
+				margin: 15px auto;
+				text-align: center;
+				h3 {
+					text-align: center;
+					color: black;
+					font: 300 21px / 35px $MyriadPro;
+
+					span { 
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}

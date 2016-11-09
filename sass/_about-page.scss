@@ -1,0 +1,64 @@
+.about-page {
+	@include border-box;
+	padding: 20px 0;
+
+	.section-title {
+		display: none;
+	}
+
+	.img-container {
+		margin: 0 auto;
+		text-align: center;
+		@include border-box;
+		width: 272px;
+		height: 429px;
+		position: relative;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+		overflow: hidden;
+		box-shadow: -0.3px 4px 6px rgba(0, 0, 0, 0.39);
+
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+
+		.position-img {
+			min-height: auto;
+			height: 100%;
+			min-width: auto;
+			max-width: none;
+			width: auto;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	.mobile-page-title {
+		margin: 33px auto 22px;
+		text-align: center;
+		color: black;
+		font: 300 22px / 28px $MyriadPro;
+	}
+
+	p, .about-content {
+		color: #505050;
+		font: 300 18px / 22px $MyriadPro;
+		span {
+			display: none;
+		}
+	}
+}

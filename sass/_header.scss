@@ -213,3 +213,14 @@ header {
 	/*end dropdown phone*/
 	/*end menu*/
 }
+.inside-page-header {
+	position: relative;
+	max-height: 167px;
+	padding: 15px 0;
+	background-image: linear-gradient(to top, #e2eff7 0%, #f1f6fa 100%);
+	box-shadow: -0.1px 2px 5px rgba(13, 14, 14, 0.18);
+
+	.button_container {
+		display: none;
+	}
+}

@@ -116,7 +116,7 @@ $Montserrat: 'Montserrat', sans-serif;
 @mixin direction {
 	@include site-container;
 	padding: 10px 0;
-	background-color: #68be28;
+	background-color: #5ca7dc;
 	.arrow-back {
 		float: left;
 	}
@@ -125,7 +125,7 @@ $Montserrat: 'Montserrat', sans-serif;
 		text-align: center;
 		a {
 			color: white;
-			font: 400 15px / 20px;
+			font: 400 15px / 22px $MyriadPro;
 			text-transform: uppercase;
 		}
 	}
@@ -205,5 +205,8 @@ a {
 // include header
 @import "header";
 @import "footer";
+@import "menu";
 @import "main-page";
+@import "about-page";
+
 @import "media";

@@ -12,7 +12,7 @@ $(function () {
 
 // for main menu desctop
 $(function () {
-    $('.main-menu .list-menu li a').each(function () {
+    $('.overlay ul li a').each(function () {
         var location = window.location.pathname;
         var link = this.pathname;
         var result = location.match(link);
@@ -24,7 +24,7 @@ $(function () {
 
 // for footer menu
 $(function () {
-    $('.footer-menu .menu-list li a').each(function () {
+    $('.footer-main-menu li a').each(function () {
         var location = window.location.pathname;
         var link = this.pathname;
         var result = location.match(link);
@@ -36,7 +36,7 @@ $(function () {
 
 // for services menu
 $(function () {
-    $('.footer-services .services-item-list li a').each(function () {
+    $('.footer-services-menu li a').each(function () {
         var location = window.location.pathname;
         var link = this.pathname;
         var result = location.match(link);
@@ -121,3 +121,9 @@ var swiper_main = new Swiper('.swiper-container-home-page', {
 //     }
 //     ];
 // }
+// DESCTOP MENU
+$('#toggle').click(function() {
+  $(this).toggleClass('active');
+  $('#overlay').toggleClass('open');
+  $('#toggle').parents('.inside-page-header').css('padding: 0;')
+});
