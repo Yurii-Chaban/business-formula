@@ -176,8 +176,8 @@ $Montserrat: 'Montserrat', sans-serif;
 	margin: 15px auto;
 	padding-bottom: 56.25%; /* 16:9 */
 	height: 0;
-	max-width: 980px;
-	max-height: 432px;
+	max-width: 971px;
+	max-height: 527px;
 	overflow: hidden;
 	iframe {
 		position: absolute;
@@ -223,6 +223,9 @@ a {
 	@include site-pagination;
 }
 
+.videoWrapper {
+	@include videoWrapper;
+}
 .mapWrapper {
 	@include mapWrapper;
 }
@@ -235,5 +238,7 @@ a {
 @import "about-page";
 @import "blog-page";
 @import "reviews-page";
+@import "blog-more-page";
+@import "contact-page";
 
 @import "media";

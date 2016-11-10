@@ -1,0 +1,146 @@
+.blog-more-page {
+	@include border-box;
+	padding: 30px 0;
+
+	.section-title {
+		font-size: 29px;
+		font-weight: 300;
+		line-height: 31px;
+	}
+
+	.article-post-date {
+		margin: 13px auto 23px;
+		text-align: center;
+		color: #999;
+		font: 300 20px / 22px $MyriadPro;
+	}
+
+	.img-wrapper {
+		margin: 0 auto;
+		width: 182px;
+		height: 276px;
+		overflow: hidden;
+		position: relative;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+		box-shadow: -0.3px 4px 6px rgba(0, 0, 0, 0.39);
+
+		img {
+			min-height: auto;
+			height: 100%;
+			min-width: auto;
+			max-width: none;
+			width: auto;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	.blog-more-content {
+		margin: 32px 0;
+		color: #505050;
+		font: 300 18px / 22px $MyriadPro;
+
+		span {
+			display: none;
+		}
+	}
+
+	.slider-more {
+		position: relative;
+
+		.left-rgba,
+		.right-rgba {
+			position: absolute;
+			content: "";
+			top: 0;
+			width: 12%;
+			height: 170px;
+			z-index: 2;
+			background: rgba(255, 255, 255, 0.6);
+		}
+		.left-rgba {
+			left: 0;
+			-webkit-border-top-right-radius: 10px;
+			-webkit-border-bottom-right-radius: 10px;
+			-moz-border-radius-topright: 10px;
+			-moz-border-radius-bottomright: 10px;
+			border-top-right-radius: 10px;
+			border-bottom-right-radius: 10px;
+		}
+		.right-rgba {
+			right: 0;
+			-webkit-border-top-left-radius: 10px;
+			-webkit-border-bottom-left-radius: 10px;
+			-moz-border-radius-topleft: 10px;
+			-moz-border-radius-bottomleft: 10px;
+			border-top-left-radius: 10px;
+			border-bottom-left-radius: 10px;
+		}
+	}
+
+	.slick-slide {
+		overflow: hidden;
+		margin: 0 5px;
+		height: 170px;
+
+		img {
+			max-width: 100%;
+			height: auto;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+			box-shadow: -0.1px 2px 5px rgba(13, 14, 14, 0.18);
+		}
+	}
+	.back-from-more {
+		display: block;
+		margin: 23px auto 18px;
+		text-align: center;
+		color: #68be28;
+		font: 400 18px / 22px $MyriadPro;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+.video-section {
+	@include border-box;
+	padding: 35px 0;
+	background-image: linear-gradient(to top, #f3f8fc 0%, #f3f8fc 100%);
+	box-shadow: -0.1px 2px 5px rgba(13, 14, 14, 0.18);
+
+	.back-btn {
+		display: block;
+		width: 130px;
+		height: 42px;
+		margin: 32px auto 0;
+		text-align: center;
+		text-decoration: none;
+		color: #4a96cf;
+		font: 400 20px / 42px $MyriadPro;
+		border: 0.86px solid #4995ce;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+	}
+}

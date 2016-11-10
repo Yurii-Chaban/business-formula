@@ -127,3 +127,39 @@ $('#toggle').click(function() {
   $('#overlay').toggleClass('open');
   $('#toggle').parents('.inside-page-header').css('padding: 0;')
 });
+
+// FOR DROPDOWN ACTIVE
+$(document).ready(function($) {
+    $('.ui.dropdown')
+    .dropdown();
+});  
+
+// FOR SLIDER MORE 
+$('.center').slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+    }
+},
+{
+  breakpoint: 480,
+  settings: {
+    arrows: false,
+    centerMode: true,
+    centerPadding: '40px',
+    slidesToShow: 1
+}
+}
+],
+nextArrow: '<i class="fa fa-long-arrow-right"></i>',
+prevArrow: '<i class="fa fa-long-arrow-left"></i>',
+});
