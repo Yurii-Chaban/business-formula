@@ -2,5 +2,216 @@
 	@include site-container;
 	padding: 20px 0;
 
-	
+	.section-title {
+		display: none;
+	}
+
+	.contact-info-block {
+		@include border-box;
+		margin: 0 auto;
+		text-align: center;
+
+		li {
+			display: block;
+			margin: 0 auto 50px;
+			vertical-align: top;
+
+			&:last-child {
+				margin-bottom: 40px;
+			}
+
+			.info {
+				margin: 24px auto 0;
+				text-align: center;
+				span {
+					display: block;
+				}
+
+				span, a {
+					color: black;
+					font: 300 21px / 23px $MyriadPro;
+				}
+
+				a {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+// ---------------------
+
+.contact-form-section {
+	@include border-box;
+	padding: 35px 0 45px;
+	background-image: linear-gradient(to top, #f3f8fc 0%, #f3f8fc 100%);
+	box-shadow: -0.1px 2px 5px rgba(13, 14, 14, 0.18);
+	.contact-form-wrapper {
+		@include border-box;
+		max-width: 730px;
+		// max-height: 399px;
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		padding: 33px 10px 34px 8px;
+		background-color: white;
+		border-radius: 9px;
+		box-shadow: -0.3px 5px 10px rgba(0, 0, 0, 0.38);
+	}
+
+	.form-title-mobile,
+	.form-title-desctop {
+		margin: 0 auto 30px;
+		text-align: center;
+		color: black;
+		font: 300 22px / 22px $MyriadPro;
+	}
+
+	.form-title-desctop {
+		display: none;
+	}
+
+	#contact-form {
+
+		.row {
+			margin: 22px auto;
+
+			#name,
+			#phone,
+			#email,
+			#select-services,
+			#contact-message {
+				@include border-box;
+				width: 100%;
+				background-color: white;
+				border: 1px solid #ccc;
+				-webkit-border-radius: 5px 4px 4px 5px;
+				-moz-border-radius: 5px 4px 4px 5px;
+				border-radius: 5px 4px 4px 5px;
+				outline: none;
+				resize: none;
+				color: #8f8f8f;
+				font: 300 15px / 18px $MyriadPro;
+				@include transition;
+
+				&:focus {
+					border-color: #4793cd;
+				}
+			}
+			#name,
+			#phone,
+			#email,
+			#select-services {
+				height: 42px;
+				padding: 3px 0 0 39px;
+				background-position: 8px 9px !important;
+			}
+
+			#name {
+				background: url("../images/icon-for-name.png") no-repeat;
+			}
+
+			#phone {
+				background: url("../images/icon-for-phone.png") no-repeat;
+			}
+
+			#email {
+				background: #fff url("../images/for-email-bg.png") no-repeat;
+			}
+
+			#select-services {
+				color: #8f8f8f;
+				font: 300 15px / 18px $MyriadPro;
+				background: url("../images/icon-for-services.png") no-repeat;
+			}
+			#contact-message {
+				height: 118px;
+				padding: 13px 0 0 6px;
+			}
+
+		}
+		.selection-block {
+			label {
+				position: relative;
+
+				&:after {
+					content: '\f107';
+					font-family: "FontAwesome";
+					color: #4793cd;
+					right: 12px;
+					font-size: 26px;
+					top: -5px;
+					padding: 0 0 2px;
+					position: absolute;
+					pointer-events: none;
+				}
+
+				&:before {
+					content:'';
+					right: 6px;
+					top: 0px;
+					width: 20px;
+					height: 20px;
+					background: #fff;
+					position: absolute;
+					pointer-events: none;
+					display: block;
+				}
+				select {
+					outline: none;
+					option {
+						display: block;
+						margin: 2px 0;
+						font: 300 16px / 22px $MyriadPro;
+					}
+				}
+			}
+		}
+
+		::-webkit-input-placeholder {
+			color: #8f8f8f;
+			font: 300 15px / 18px $MyriadPro;
+		}
+
+		:-moz-placeholder { /* Firefox 18- */
+			color: #8f8f8f;
+			font: 300 15px / 18px $MyriadPro;
+		}
+
+		::-moz-placeholder {  /* Firefox 19+ */
+			color: #8f8f8f;
+			font: 300 15px / 18px $MyriadPro;
+		}
+
+		:-ms-input-placeholder {  
+			color: #8f8f8f;
+			font: 300 15px / 18px $MyriadPro;
+		}
+
+		#contact-sbm-btn {
+			display: block;
+			width: 165px;
+			height: 56px;
+			margin: 30px auto 0;
+			text-align: center;
+			color: white;
+			font: 600 18px / 56px $MyriadPro;
+			background-image: linear-gradient(to top, #4a97cf 0%, #61addf 100%);
+			-webkit-border-radius: 25px;
+			-moz-border-radius: 25px;
+			border-radius: 25px;
+			border: inherit;
+			cursor: pointer;
+			outline: none;
+		}
+	}
+}
+
+// ---------------------
+.contact-map {
+	display: block;
+
+	.mapWrapper {
+		height: 469px;
+	}
 }

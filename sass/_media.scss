@@ -218,6 +218,81 @@
 			letter-spacing: -1px;
 		}
 	}
+
+	// CONTACT PAGE
+	.contact-page {
+		padding: 57px 0 60px;
+
+		.section-title {
+			display: block;
+			padding-left: 15px;
+		}
+
+		.contact-info-block {
+			margin: 40px auto 0;
+
+			li {
+				display: inline-block;
+				margin: 0 25px 0;
+
+				&:first-child {
+					margin-left: 0;
+				}
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+
+	.contact-form-section {
+		padding: 54px 0 73px;
+
+		.form-title-mobile {
+			display: none;
+		}
+		.form-title-desctop {
+			display: block;
+		}
+		#contact-form {
+			.row {
+				overflow: hidden;
+				margin: 4px auto 11px;
+			}
+			.name,
+			.email {
+				float: left;
+				width: 49%;
+				clear: left;
+			}
+
+			.phone,
+			.selection-block {
+				float: right;
+				width: 49%;
+				clear: right;
+			}
+
+			.email,
+			.selection-block {
+				margin-bottom: 15px;
+			}
+			.message {
+				clear: both;
+			}
+		}
+	}
+
+	.contact-map {
+		display: block;
+		.mapWrapper {
+			max-height: 469px;
+			height: auto;
+			min-height: 20px;
+			padding-bottom: 37.8%;
+		}
+	}
 }
 
 @media (min-width: 1024px) {
@@ -779,6 +854,66 @@
 			line-height: 28px;
 		}
 	}
+	// -----------------------------------------
+
+// CONTACT PAGE
+.contact-page {
+	padding: 57px 0 60px;
+
+	.section-title {
+		display: block;
+		padding-left: 15px;
+	}
+
+	.contact-info-block {
+		margin: 40px auto 0;
+
+		li {
+			display: inline-block;
+			letter-spacing: -0.5px;
+
+			&:first-child {
+				margin: 0 0 0 58px;
+				float: left;
+
+				.info {
+					margin: 17px auto 0;
+					text-align: center;
+					span {
+						line-height: 28px;
+					}
+				}
+			}
+
+			&:nth-child(2) {
+				margin: 6px 60px 0 92px;
+
+				.info {
+					margin: 44px auto 0;
+				}
+			}
+
+			&:last-child {
+				margin: 10px 61px 0 85px;
+				float: right;
+				.info {
+					margin: 43px auto 0;
+					padding-right: 12px;
+				}
+			}
+		}
+	}
+}
+
+.contact-form-section {
+	padding: 54px 0 73px 15px;
+
+	.contact-form-wrapper {
+		padding: 28px 32px 27px 35px;
+	}
+}
+
+
 	// -----------------------------------------
 
 	// FOOTER

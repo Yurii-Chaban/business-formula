@@ -128,11 +128,6 @@ $('#toggle').click(function() {
   $('#toggle').parents('.inside-page-header').css('padding: 0;')
 });
 
-// FOR DROPDOWN ACTIVE
-$(document).ready(function($) {
-    $('.ui.dropdown')
-    .dropdown();
-});  
 
 // FOR SLIDER MORE 
 $('.center').slick({
