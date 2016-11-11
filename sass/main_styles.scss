@@ -12,6 +12,14 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+    font-family: 'MyriadPro';
+    src: url('../resources/MyriadPro/Light/ather/myriadpro-light-webfont.woff2') format('woff2'),
+         url('../resources/MyriadPro/Light/ather/myriadpro-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 @font-face {
 	font-family: 'MyriadPro';
@@ -240,5 +248,6 @@ a {
 @import "reviews-page";
 @import "blog-more-page";
 @import "contact-page";
+@import "register-OOO-page";
 
 @import "media";

@@ -1,0 +1,324 @@
+.register-OOO-page {
+	@include site-container;
+
+	.poster-section {
+		min-width: 320px;
+		height: 265px;
+		overflow: hidden;
+		position: relative;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+
+		.poster-img {
+			min-height: auto;
+			height: 100%;
+			min-width: auto;
+			max-width: none;
+			width: auto;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+
+		.poster-overflow {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+			background: url("../images/poster-overflov-element-mobile.png") no-repeat;
+			background-size: cover;
+		}
+
+		.position-content-block {
+			position: absolute;
+			top: 40px;
+			left: 25px;
+			max-width: 587px;
+			width: auto;
+			height: auto;
+			z-index: 2;
+
+			.content-title {
+				margin: 0 0 26px;
+				color: black;
+				font: 300 20px / 22px $MyriadPro;
+			}
+
+			.content-text {
+				color: black;
+				font: 300 18px / 22px $MyriadPro;
+			}
+		}
+	}
+}
+.how-to-register-section {
+	background-image: linear-gradient(to top, #f3f8fc 0%, #f3f8fc 100%);
+	box-shadow: -0.1px 2px 5px rgba(13, 14, 14, 0.18);
+	padding: 20px 0;
+	.step-register-list {
+		@include border-box;
+		margin: 0 auto;
+		text-align: center;
+
+		li {
+			@include border-box;
+			display: block;
+			max-width: 462px;
+			width: 100%;
+			margin: 30px auto;
+			padding: 20px 18px 19px 9px;
+			text-align: left;
+			background-color: white;
+			border-radius: 10px;
+			box-shadow: -0.3px 5px 10px rgba(0, 0, 0, 0.38);
+
+			.step-title {
+				color: #4e99d2;
+				font: 300 24px / 30px $MyriadPro;
+			}
+
+			.step-description {
+				margin: 40px 0 0;
+				color: #505050;
+				font: 300 18px / 22px $MyriadPro;
+			}
+		}
+	}
+
+	.after-steps-title,
+	.after-steps-description {
+		color: black;
+		font: 300 24px / 30px $MyriadPro;
+	}
+	.after-steps-title {
+		margin: 0 auto 30px;
+		text-align: center;
+	}
+}
+.register-section {
+	@include border-box;
+	padding: 20px 0;
+	background: #fff;
+
+	.answer-block {
+		
+		.register-to-do-list {
+			@include border-box;
+			margin: 35px auto 0;
+			text-align: center;
+
+			li {
+				display: block;
+				max-width: 270px;
+				margin: 15px auto 30px;
+
+				.icon-wrapper	{
+					position: relative;
+					margin: 0 auto;
+					width: 75px;
+					height: 75px;
+					border: 0.73px solid #ccc;
+					-webkit-border-radius: 15px;
+					-moz-border-radius: 15px;
+					border-radius: 15px;
+
+					.item-number {
+						position: absolute;
+						top:-11px;
+						left: 50%;
+						transform: translateX(-50%);
+						display: block;
+						width: 23px;
+						height: 23px;
+						text-align: center;
+						color: white;
+						font: 300 18px / 22px $MyriadPro;
+						background-color: #4e99d2;
+						-webkit-border-radius: 100%;
+						-moz-border-radius: 100%;
+						border-radius: 100%;
+					}
+
+					img {
+						display: block;
+						margin: 15px auto 0;
+						text-align: center;
+					}
+				}
+
+				.to-do-description {
+					margin: 20px auto 0;
+					color: black;
+					font: 300 22px / 24px $MyriadPro;
+
+					.hint {
+						display: block;
+						margin: 10px auto 0;
+						color: #828282;
+						font: 300 18px / 22px $MyriadPro;
+					}
+				}
+			}
+		}
+	}
+
+	.service-table {
+		@include border-box;
+		padding: 20px 0;
+		border-top: 3px solid #4e99d2;
+		border-bottom: 3px solid #4e99d2;
+
+		.table-sign {
+			margin: 0 0 25px;
+			padding: 0 21px 0 8px;
+			color: black;
+			font: 300 24px / 30px $MyriadPro;
+		}
+
+		.table-info-block {
+			.table-header {
+				display: none;
+			}
+
+			.table-info-content {
+
+				.info-row {
+					overflow: hidden;
+					width: auto;
+					height: auto;
+					padding: 13px 12px 7px 9px;
+					color: black;
+					font: 300 18px / 22px $MyriadPro;
+					border: 0.73px solid #4e99d2;
+					-webkit-border-radius: 10px;
+					-moz-border-radius: 10px;
+					border-radius: 10px;
+
+					span {
+						display: block;
+						margin: 10px 0;
+					}
+
+					.info-price {
+						float: right;
+					}
+				}
+			}
+		}
+	}
+
+	.complate-form {
+		@include border-box;
+		padding: 20px 0;
+
+		.complate-title {
+			color: black;
+			font: 300 22px / 24px $MyriadPro;
+			text-align: center;
+		}
+
+		.form-title {
+			margin: 25px auto;
+			color: black;
+			text-align: center;
+			font: 300 22px / 24px $MyriadPro;
+			text-transform: uppercase;
+		}
+
+		#register-OOO-form {
+			@include border-box;
+
+			.row {
+				@include border-box;
+				label,
+				input,
+				textarea,
+				#founders-file,
+				#CEO-file {
+					@include border-box;
+					display: block;
+					overflow: hidden;
+					width: 100%;
+					height: auto;
+					color: black;
+					font: 300 18px / 22px $MyriadPro;
+					border: 0.73px solid #4e99d2;
+					-webkit-border-radius: 10px;
+					-moz-border-radius: 10px;
+					border-radius: 10px;
+					resize: none;
+					outline: none;
+				}
+
+				label,
+				#founders-file,
+				#CEO-file  {
+					padding: 13px 12px 7px 9px;
+
+					a {
+						color: #828282;
+						text-decoration: none;
+
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+				input {
+					height: 61px;
+					padding: 0 0 0 10px;
+				}
+				textarea {
+					height: 181px;
+					padding: 10px 0 0 10px;
+				}
+			}
+
+			#sbm-OOO-btn {
+				display: block;
+				width: 169px;
+				height: 52px;
+				margin: 25px auto 27px;
+				text-align: center;
+				color: white;
+				font: 600 18px / 52px $MyriadPro;
+				background-image: linear-gradient(to top, #4793cd 0%, #62aee0 100%);
+				-webkit-border-radius: 25px;
+				-moz-border-radius: 25px;
+				border-radius: 25px;
+				border: none;
+				outline: none;
+				cursor: pointer;
+			}
+		}
+	}
+	.back-btn {
+		display: block;
+		width: 84px;
+		height: 27px;
+		margin: 0 auto;
+		text-align: center;
+		text-decoration: none;
+		color: #4a96cf;
+		font: 400 15px / 27px $MyriadPro;
+		border: 0.86px solid #4995ce;
+		-webkit-border-radius: 9px;
+		-moz-border-radius: 9px;
+		border-radius: 9px;
+	}
+}

@@ -293,6 +293,123 @@
 			padding-bottom: 37.8%;
 		}
 	}
+
+	// -------------------------
+	.register-section {
+		.service-table {
+			.table-info-block {
+				.table-header {
+					display: block;
+					margin: 15px auto 20px;
+					padding: 0 15px;
+					overflow: hidden;
+					text-align: left;
+					color: black;
+					font: 300 24px / 30px $MyriadPro;
+
+					.left-name {
+						float: left;
+						max-width: 70%;
+						width: 100%;
+					}
+
+					.right-name {
+						float: left;
+						max-width: 30%;
+						width: 100%;
+					}
+				}
+
+				.table-info-content {
+					.info-row {
+						overflow: hidden;
+						.info-title {
+							float: left;
+							max-width: 70%;
+							width: 100%;
+						}
+						.info-price {
+							float: left;
+							max-width: 30%;
+							width: 100%;
+						}
+
+						.customize {
+							position: relative;
+							min-height: 115px;
+
+							span {
+								position: absolute;
+								top: 50%;
+								transform: translateY(-50%);
+								left: 0;
+							}
+							
+						}
+					}
+				}
+			}
+		}
+
+		.complate-form {
+			#register-OOO-form {
+				overflow: hidden;
+				.row {
+					overflow: hidden;
+					border: 0.73px solid #4e99d2;
+					-webkit-border-radius: 10px;
+					-moz-border-radius: 10px;
+					border-radius: 10px;
+					label {
+						float: left;
+						max-width: 70%;
+						height: 40px;
+						width: 100%;
+						border: none;
+						border-right: 0.73px solid #4e99d2;
+						border-radius: 0;
+					}
+
+					input,
+					textarea,
+					#founders-file,
+					#CEO-file {
+						float: left;
+						max-width: 30%;
+						height: 40px;
+						width: 100%;
+						border: none;
+						border-radius: 0;
+					}
+				}
+				.founders,
+				.CEO {
+					height: 62px;
+					label,
+					#founders-file,
+					#CEO-file {
+						height: 62px;
+					}
+					label {
+						a {
+							display: block;
+						}
+					}
+				}
+				.activities-main {
+					height: 317px;
+					label,
+					textarea {
+						height: 317px;
+					}
+				}
+				#sbm-OOO-btn {
+					float: right;
+					margin: 37px 0 20px;
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 1024px) {
@@ -389,6 +506,11 @@
 			margin: 21px 0 0;
 			right: 5%;
 		}
+	}
+
+	.services-header {
+		background: none;
+		box-shadow: none;
 	}
 
 	.page-slider {
@@ -911,6 +1033,58 @@
 	.contact-form-wrapper {
 		padding: 28px 32px 27px 35px;
 	}
+}
+
+// ----------------------
+.register-OOO-page {
+	.poster-section {
+		width: 100%;
+		height: 627px;
+		margin-top: -167px;
+
+		.poster-overflow {
+			background: url("../images/poster-overflov-element-desctop.png") no-repeat;
+		}
+
+		.position-content-block {
+			top: 170px;
+			.content-title {
+				font-size: 43px;
+				line-height: 53px;
+			}
+
+			.content-text {
+				font-size: 24px;
+				line-height: 30px;
+			}
+		}
+	}
+}
+
+.how-to-register-section {
+	padding: 60px 0 60px;
+	.step-register-list {
+		overflow: hidden;
+		margin: 50px auto 42px;
+		padding: 0 10px 15px;
+		li {
+			margin: 0;
+			min-height: 320px;
+			&:nth-child(odd) {
+				float: left;
+			}
+			&:nth-child(even) {
+				float: right;
+			}
+		}
+	}
+
+	.after-steps-title {
+		clear: both;
+	}
+}
+.register-section {
+	padding: 60px 0 60px;
 }
 
 
