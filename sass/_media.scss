@@ -293,7 +293,13 @@
 			padding-bottom: 37.8%;
 		}
 	}
-
+	.register-OOO-page {
+		.poster-section {
+			.position-content-block {
+				top: -60px;
+			}
+		}
+	}
 	// -------------------------
 	.register-section {
 		.service-table {
@@ -309,42 +315,49 @@
 
 					.left-name {
 						float: left;
-						max-width: 70%;
+						max-width: 65.5%;
 						width: 100%;
 					}
 
 					.right-name {
 						float: left;
-						max-width: 30%;
+						max-width: 33%;
 						width: 100%;
 					}
 				}
 
 				.table-info-content {
 					.info-row {
+						max-width: 947px;
 						overflow: hidden;
+						padding: 0 12px 0 9px;
+
 						.info-title {
 							float: left;
-							max-width: 70%;
+							max-width: 65.5%;
 							width: 100%;
+							padding: 13px 0 7px;
+							border-right: 0.73px solid #4e99d2;
 						}
 						.info-price {
 							float: left;
-							max-width: 30%;
+							max-width: 33%;
 							width: 100%;
+							padding: 13px 0 7px 12px;
 						}
 
 						.customize {
 							position: relative;
 							min-height: 115px;
+							padding: 13px 0 7px 12px;
 
 							span {
 								position: absolute;
 								top: 50%;
 								transform: translateY(-50%);
-								left: 0;
+								left: 12px;
 							}
-							
+
 						}
 					}
 				}
@@ -1047,7 +1060,7 @@
 		}
 
 		.position-content-block {
-			top: 170px;
+			top: -60px;
 			.content-title {
 				font-size: 43px;
 				line-height: 53px;
@@ -1062,14 +1075,18 @@
 }
 
 .how-to-register-section {
-	padding: 60px 0 60px;
+	padding: 56px 0 60px;
+
+	.section-title {
+		padding-left: 13px;
+	}
 	.step-register-list {
 		overflow: hidden;
 		margin: 50px auto 42px;
 		padding: 0 10px 15px;
 		li {
 			margin: 0;
-			min-height: 320px;
+			min-height: 317px;
 			&:nth-child(odd) {
 				float: left;
 			}
@@ -1085,6 +1102,26 @@
 }
 .register-section {
 	padding: 60px 0 60px;
+
+	.answer-block {
+		padding: 0 0 60px;
+		.register-to-do-list {
+			li {
+				display: inline-block;
+				max-width: 162px;
+				margin: 0 15px;
+				vertical-align: top;
+
+				&:first-child {
+					margin-left: 0;
+				}
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
 }
 
 
@@ -1239,6 +1276,158 @@
 			}
 		}
 	}
+// -----------------------------------------
+
+.register-OOO-page {
+	.poster-section {
+		.position-content-block {
+			top: -80px;
+			letter-spacing: -0.2px;
+
+			.content-title {
+				margin: 0 0 15px;
+			}
+		}
+	}
+}
+.how-to-register-section {
+	padding: 56px 0 67px;
+	.step-register-list {
+		overflow: hidden;
+		margin: 50px auto 25px;
+		padding: 0 10px 15px;
+		li {
+			margin: 0;
+			min-height: 317px;
+			padding: 26px 18px 17px 36px;
+			&:nth-child(odd) {
+				margin: 0 0 0 5px;
+			}
+
+			&:nth-child(even) {
+				margin: 0 -9px 0 0;
+			}
+
+			.step-description {
+				margin: 28px 0 0;
+			}
+		}
+	}
+
+	.after-steps-title {
+		clear: both;
+		margin: 0 auto 22px;
+		padding-left: 20px;
+		letter-spacing: -1.4px;
+	}
+	.after-steps-description {
+		padding-left: 16px;
+		letter-spacing: -1.2px;
+	}
+}
+
+.register-section {
+	padding: 58px 0 60px;
+
+	.section-title {
+		padding-left: 15px;
+		letter-spacing: 0.3px;
+	}
+
+	.answer-block {
+		padding: 0 0 43px;
+		overflow: hidden;
+		.register-to-do-list {
+			margin: 74px auto 0;
+
+			li {
+				position: relative;
+				max-width: 175px;
+				float: left;
+				margin: 0 15px;
+				.to-do-description {
+					margin: 23px auto 0;
+					padding: 0 0 0 6px;
+					text-align: center;
+					.hint {
+						text-align: left;
+					}
+				}
+
+				&:first-child {
+					margin: 0 10px 0 0;
+					padding-left: 9px;
+					&:after {
+						position: absolute;
+						top: 29px;
+						right: -99px;
+						content: "- - - - - - - - - - - - -> ";
+						color: #ccc;
+						font: 300 18px / 22px $MyriadPro;
+					}
+				}
+				&:nth-child(2) {
+					max-width: 235px;
+					&:after {
+						position: absolute;
+						top: 29px;
+						right: -73px;
+						content: "- - - - - - - - - - - - - - -> ";
+						color: #ccc;
+						font: 300 18px / 22px $MyriadPro;
+					}
+				}
+				&:nth-child(3) {
+					max-width: 180px;
+					margin: 0 0 0 10px;
+					&:after {
+						position: absolute;
+						top: 29px;
+						right: -72px;
+						content: " - - - - - - - - - - - -> ";
+						color: #ccc;
+						font: 300 18px / 22px $MyriadPro;
+					}
+				}
+				&:nth-child(4) {
+					max-width: 200px;
+					margin: 0 0 0 20px;
+					&:after {
+						position: absolute;
+						top: 29px;
+						right: -28px;
+						content: "- - - - - - - -> ";
+						color: #ccc;
+						font: 300 18px / 22px $MyriadPro;
+					}
+				}
+
+				&:last-child {
+					max-width: 150px;
+					margin: 0;
+				}
+			}
+		}
+	}
+	
+	.service-table {
+		padding: 45px 0 40px 33px;
+
+		.table-sign {
+			padding: 0;
+			letter-spacing: -0.5px;
+		}
+
+		.table-info-block {
+			.table-header {
+				margin: 30px auto 15px;
+				padding: 0 11px;
+			}
+		}
+	}
+}
+
+
 // -----------------------------------------
 }
 @media (min-width: 1800px) {
