@@ -1,4 +1,4 @@
-.register-OOO-page {
+.register-PP-page {
 	@include site-container;
 
 	.poster-section {
@@ -46,7 +46,7 @@
 
 		.position-content-block {
 			position: absolute;
-	    top: -90px;
+			top: -65px;
 			left: 25px;
 			max-width: 587px;
 			width: auto;
@@ -56,13 +56,9 @@
 			.content-title {
 				margin: 0 0 26px;
 				color: black;
-				font: 300 20px / 22px $MyriadPro;
+				font: 300 24px / 38px $MyriadPro;
 			}
 
-			.content-text {
-				color: black;
-				font: 300 18px / 22px $MyriadPro;
-			}
 		}
 	}
 }
@@ -70,44 +66,28 @@
 	background-image: linear-gradient(to top, #f3f8fc 0%, #f3f8fc 100%);
 	box-shadow: -0.1px 2px 5px rgba(13, 14, 14, 0.18);
 	padding: 20px 0;
-	.step-register-list {
+
+	.low-text {
 		@include border-box;
 		margin: 0 auto;
-		text-align: center;
-
-		li {
-			@include border-box;
-			display: block;
-			max-width: 462px;
-			width: 100%;
-			margin: 30px auto;
-			padding: 20px 18px 19px 9px;
-			text-align: left;
-			background-color: white;
-			border-radius: 10px;
-			box-shadow: -0.3px 5px 10px rgba(0, 0, 0, 0.38);
-
-			.step-title {
-				color: #4e99d2;
-				font: 300 24px / 30px $MyriadPro;
-			}
-
-			.step-description {
-				margin: 40px 0 0;
-				color: #505050;
-				font: 300 18px / 22px $MyriadPro;
-			}
-		}
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+		padding: 20px 18px 19px 9px;
+		text-align: left;
+		background-color: white;
+		border-radius: 10px;
+		box-shadow: -0.3px 5px 10px rgba(0, 0, 0, 0.38);
+		margin: 40px 0 0;
+		color: #505050;
+		font: 300 18px / 22px $MyriadPro;
 	}
 
-	.after-steps-title,
-	.after-steps-description {
+	.after-low-title {
+		margin: 30px auto;
+		text-align: center;
 		color: black;
 		font: 300 24px / 30px $MyriadPro;
-	}
-	.after-steps-title {
-		margin: 0 auto 30px;
-		text-align: center;
 	}
 }
 .register-section {
@@ -218,6 +198,11 @@
 					.info-price {
 						float: right;
 					}
+
+					.row-title {
+						color: black;
+						font: 300 24px / 26px $MyriadPro;
+					}
 				}
 			}
 		}
@@ -241,7 +226,7 @@
 			text-transform: uppercase;
 		}
 
-		#register-OOO-form {
+		#register-PP-form {
 			@include border-box;
 
 			.row {
@@ -294,7 +279,7 @@
 				}
 			}
 
-			#sbm-OOO-btn {
+			#sbm-PP-btn {
 				display: block;
 				width: 169px;
 				height: 52px;
