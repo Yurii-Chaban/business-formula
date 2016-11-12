@@ -238,7 +238,6 @@ a {
 	@include mapWrapper;
 }
 
-// include header
 @import "header";
 @import "footer";
 @import "menu";
@@ -250,5 +249,5 @@ a {
 @import "contact-page";
 @import "register-OOO-page";
 @import "register-PP-page";
-
+@import "customize-OOO-page";
 @import "media";

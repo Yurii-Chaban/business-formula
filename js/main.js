@@ -46,39 +46,6 @@ $(function () {
     });
 });
 
-// lenguage block
-$(function () {
-    $('#lenguage-list li a').each(function () {
-        var location = window.location.pathname;
-        var link = this.pathname;
-        var result = location.match(link);
-        if(result && link.length > 0) {
-            $(this).addClass('lenguage-item-active');
-        }
-    });
-});
-$(function () {
-    $('.lenguage-block-list li a').each(function () {
-        var location = window.location.pathname;
-        var link = this.pathname;
-        var result = location.match(link);
-        if(result && link.length > 0) {
-            $(this).addClass('lenguage-block-list-active');
-        }
-    });
-});
-
-// lenguage block
-$(function () {
-    $('.pagination-list li a').each(function () {
-        var location = window.location.pathname;
-        var link = this.pathname;
-        var result = location.match(link);
-        if(result && link.length > 0) {
-            $(this).addClass('pagination-active');
-        }
-    });
-});
 
 // for slider in Home page
 var swiper_main = new Swiper('.swiper-container-home-page', {
@@ -96,31 +63,6 @@ var swiper_main = new Swiper('.swiper-container-home-page', {
     autoplayDisableOnInteraction: false
 });
 
-// CUSTOMIZE GOOGLE MAPS
-// function initMap() {
-
-//     var styleArray = [
-//     {
-//         featureType: "all",
-//         stylers: [
-//         { saturation: -80 }
-//         ]
-//     },{
-//         featureType: "road.arterial",
-//         elementType: "geometry",
-//         stylers: [
-//         { hue: "#00ffee" },
-//         { saturation: 50 }
-//         ]
-//     },{
-//         featureType: "poi.business",
-//         elementType: "labels",
-//         stylers: [
-//         { visibility: "off" }
-//         ]
-//     }
-//     ];
-// }
 // DESCTOP MENU
 $('#toggle').click(function() {
   $(this).toggleClass('active');

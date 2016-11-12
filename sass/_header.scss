@@ -152,6 +152,11 @@ header {
 			margin: 3px 0 0;
 			color: black;
 			font: 300 21px / 30px $MyriadPro;
+
+			a {
+				color: #000;
+				text-decoration: none;
+			}
 		}
 	}
 	/*dropdown*/
