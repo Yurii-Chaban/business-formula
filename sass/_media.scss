@@ -290,7 +290,8 @@
 			max-height: 469px;
 			height: auto;
 			min-height: 20px;
-			padding-bottom: 37.8%;
+			// padding-bottom: 37.8%;
+			padding-bottom: 0;
 		}
 	}
 	.register-OOO-page,
@@ -931,6 +932,12 @@
 				display: block;
 				cursor: pointer;
 			}
+		}
+	}
+
+	.contact-map {
+		.mapWrapper {
+			padding: 0;
 		}
 	}
 

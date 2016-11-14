@@ -13,11 +13,11 @@
 	font-style: normal;
 }
 @font-face {
-    font-family: 'MyriadPro';
-    src: url('../resources/MyriadPro/Light/ather/myriadpro-light-webfont.woff2') format('woff2'),
-         url('../resources/MyriadPro/Light/ather/myriadpro-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'MyriadPro';
+	src: url('../resources/MyriadPro/Light/ather/myriadpro-light-webfont.woff2') format('woff2'),
+	url('../resources/MyriadPro/Light/ather/myriadpro-light-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 
 }
 
@@ -236,6 +236,23 @@ a {
 }
 .mapWrapper {
 	@include mapWrapper;
+	#mapWrapper {
+		min-height:500px;
+		height: 100%;
+		width: 100%;
+		min-width: 500px;
+	}
+	.gm-style-iw * {
+		display: block;
+		width: 100%;
+	}
+	.gm-style-iw h4, .gm-style-iw p {
+		margin: 0;
+		padding: 0;
+	}
+	.gm-style-iw a {
+		color: #4272db;
+	}
 }
 
 @import "header";

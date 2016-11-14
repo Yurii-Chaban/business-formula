@@ -78,25 +78,26 @@ $('.center').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-    }
-},
-{
-  breakpoint: 480,
-  settings: {
-    arrows: false,
-    centerMode: true,
-    centerPadding: '40px',
-    slidesToShow: 1
-}
-}
-],
+        {
+          breakpoint: 768,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3
+            }
+        },
+        {
+          breakpoint: 480,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+        }
+    ],
 nextArrow: '<i class="fa fa-long-arrow-right"></i>',
 prevArrow: '<i class="fa fa-long-arrow-left"></i>',
 });
+

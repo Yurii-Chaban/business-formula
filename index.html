@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="stylesheets/swiper.min.css">
 	<link rel="stylesheet" href="stylesheets/sticky.css">
 	<link rel="stylesheet" href="stylesheets/main_styles.css">
+
 </head>
 <body>
 	<header>
@@ -367,7 +368,9 @@
 	</section>
 	<section class="site-container map-section">
 		<div class="mapWrapper">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.5713612673408!2d37.66711431569963!3d55.731200980547634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54ada398b5c03%3A0xe6ea580bd02b4de7!2z0JLQvtC70LPQvtCz0YDQsNC00YHQutC40Lkg0L_RgC4sIDIsINCc0L7RgdC60LLQsCwg0KDQvtGB0ZbRjywgMTA5MDQ0!5e0!3m2!1suk!2sua!4v1478593591181" width="600" height="450" style="border:0" allowfullscreen></iframe>
+			<div id="mapWrapper"></div>
+			<!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=27cl_BFBeAV5cD8-478th40d1DHoZs-x&amp;width=100%25&amp;height=720&amp;lang=ru_UA&amp;sourceType=constructor&amp;scroll=true"></script> -->
+			<!-- <iframe src="http://mapbuildr.com/frame/bwqow0" frameborder="0" height="500" width="500"></iframe> -->
 			<h5 class="map-overflow" onclick="$(this).css('display','none')">&nbsp;</h5>
 		</div>
 	</section>
@@ -408,6 +411,8 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/swiper.jquery.min.js"></script>
 	<script src="js/swiper.min.js"></script>
+	<script src="js/googleMapCustomize.js"></script>
+	<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCgDH4m_6s_NqTieahs1Ft9R4ndkKQk0N8&sensor=false&extension=.js'></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
