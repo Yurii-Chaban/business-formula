@@ -84,7 +84,7 @@
 				<div class="desctop-info-block">
 					<a class="header-phone" href="tel:84959433787">8 (495) 943-37-87</a>
 					<h3 class="day-and-hours">Пн.-Пт. с 9.00-17.00</h3>
-					<a class="free-consultation-btn" href="#">Бесплатная консультация</a>
+					<a id="" class="free-consultation-btn" href="#openModal">Бесплатная консультация</a>
 				</div>
 				<div class="button_container" id="toggle">
 					<span class="top"></span>
@@ -123,6 +123,22 @@
 						</li>
 					</ul>
 				</nav>
+			</div>
+		</div>
+		<div id="openModal" class="modalDialog">
+			<div>
+				<a href="#close" title="Close" class="close">X</a>
+				<h2 class="modal-title">Бесплатная консультация</h2>
+				<p class="moda-sign">Заполните поля ниже. Специалист<br> свяжется с вами в течение 29 секунд.</p>
+				<form id="modal-form">
+					<input id="moda-name" type="email" name="name" value="" id="name" placeholder="Введите ваше имя" autocomplete="off">
+					<input id="modal-phone" type="tel" name="phone" value="" id="phone" placeholder="Введите ваш телефон" autocomplete="off">
+					<input type="submit" id="modal-sbm-btn" name="order" value="Бесплатная консультация">
+				</form>
+				<h3 class="lock-title">
+					<img src="images/lock.png" alt="lock">
+					<span>Ваши данные в безопасности и не<br> будут переданы третьим лицам.</span>
+				</h3>
 			</div>
 		</div>
 	</header>

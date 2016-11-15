@@ -255,6 +255,132 @@ a {
 	}
 }
 
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// MODAL VINDOW
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.7);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 35px 20px;
+	border-radius: 10px;
+	background: #fff;
+	border: 5px solid #55a1d7;
+	background: #fff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	text-align: center;
+	width: 330px;
+
+	.lock-title {
+		max-width: 205px;
+		overflow: hidden;
+		margin: 0 auto;
+		color: #a1a1a1;
+		font: 300 12px / 14px $MyriadPro;
+
+		img {
+			float: left;
+			margin: 0 10px 0 0;
+		}
+		
+	}
+}
+.modalDialog > div .modal-title {
+	font: 300 24px / 26px $MyriadPro;
+}
+.modalDialog > div .moda-sign {
+	margin: 20px auto;
+	font: 300 16px / 20px $MyriadPro;
+}
+.modalDialog > div #modal-form {
+	#moda-name,
+	#modal-phone {
+		display: block;
+		max-width: 232px;
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		height: 40px;
+		background: #fff;
+		border-radius: 0px;
+		margin-bottom: 10px;
+		padding-left: 45px;
+		border: 1px solid #d8d8d8;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		-webkit-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+		@include border-box;
+		margin-bottom: 15px;
+		outline: none;
+	}
+	#moda-name {
+		background: #fff url("../images/person.png") no-repeat;
+		background-position: 5px 8px !important;
+	}
+	#modal-phone {
+		background: #fff url("../images/modal-phone.png") no-repeat;
+		background-position: 10px !important;
+	}
+	#modal-sbm-btn {
+		display: block;
+		width: 234px;
+		height: 50px;
+		margin: 15px auto 30px;
+		font: 400 18px / 50px $MyriadPro;
+		color: #fff;
+		height: 100%;
+		border: none;
+		background: #3392D6;
+		-webkit-border-radius: 30px;
+		-moz-border-radius: 30px;
+		border-radius: 30px;
+		outline: none !important;
+		-webkit-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+		cursor: pointer;
+	} 
+}
+.close {
+	color: #B8B8B8;
+	line-height: 25px;
+	position: absolute;
+	right: 5px;
+	text-align: center;
+	top: 5px;
+	width: 24px;
+	text-decoration: none;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+}
+
+.close:hover { color: #6AB0D4; }
+
 @import "header";
 @import "footer";
 @import "menu";

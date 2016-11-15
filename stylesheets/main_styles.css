@@ -294,6 +294,148 @@ a {
   color: #4272db;
 }
 
+/* line 260, ../sass/main_styles.scss */
+.modalDialog {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+/* line 275, ../sass/main_styles.scss */
+.modalDialog:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* line 280, ../sass/main_styles.scss */
+.modalDialog > div {
+  width: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 35px 20px;
+  border-radius: 10px;
+  background: #fff;
+  border: 5px solid #55a1d7;
+  background: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-align: center;
+  width: 330px;
+}
+/* line 295, ../sass/main_styles.scss */
+.modalDialog > div .lock-title {
+  max-width: 205px;
+  overflow: hidden;
+  margin: 0 auto;
+  color: #a1a1a1;
+  font: 300 12px/14px "MyriadPro", sans-serif;
+}
+/* line 302, ../sass/main_styles.scss */
+.modalDialog > div .lock-title img {
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+/* line 309, ../sass/main_styles.scss */
+.modalDialog > div .modal-title {
+  font: 300 24px/26px "MyriadPro", sans-serif;
+}
+
+/* line 312, ../sass/main_styles.scss */
+.modalDialog > div .moda-sign {
+  margin: 20px auto;
+  font: 300 16px/20px "MyriadPro", sans-serif;
+}
+
+/* line 317, ../sass/main_styles.scss */
+.modalDialog > div #modal-form #moda-name,
+.modalDialog > div #modal-form #modal-phone {
+  display: block;
+  max-width: 232px;
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  height: 40px;
+  background: #fff;
+  border-radius: 0px;
+  margin-bottom: 10px;
+  padding-left: 45px;
+  border: 1px solid #d8d8d8;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  outline: none;
+}
+/* line 340, ../sass/main_styles.scss */
+.modalDialog > div #modal-form #moda-name {
+  background: #fff url("../images/person.png") no-repeat;
+  background-position: 5px 8px !important;
+}
+/* line 344, ../sass/main_styles.scss */
+.modalDialog > div #modal-form #modal-phone {
+  background: #fff url("../images/modal-phone.png") no-repeat;
+  background-position: 10px !important;
+}
+/* line 348, ../sass/main_styles.scss */
+.modalDialog > div #modal-form #modal-sbm-btn {
+  display: block;
+  width: 234px;
+  height: 50px;
+  margin: 15px auto 30px;
+  font: 400 18px/50px "MyriadPro", sans-serif;
+  color: #fff;
+  height: 100%;
+  border: none;
+  background: #3392D6;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  outline: none !important;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+/* line 368, ../sass/main_styles.scss */
+.close {
+  color: #B8B8B8;
+  line-height: 25px;
+  position: absolute;
+  right: 5px;
+  text-align: center;
+  top: 5px;
+  width: 24px;
+  text-decoration: none;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+}
+
+/* line 382, ../sass/main_styles.scss */
+.close:hover {
+  color: #6AB0D4;
+}
+
 /* line 1, ../sass/_header.scss */
 header {
   position: relative;
@@ -2238,7 +2380,7 @@ h1 {
   max-width: 587px;
   width: auto;
   height: auto;
-  z-index: 2;
+  z-index: 1;
 }
 /* line 56, ../sass/_register-OOO-page.scss */
 .register-OOO-page .poster-section .position-content-block .content-title {
@@ -2610,7 +2752,7 @@ h1 {
   max-width: 587px;
   width: auto;
   height: auto;
-  z-index: 2;
+  z-index: 1;
 }
 /* line 56, ../sass/_register-PP-page.scss */
 .register-PP-page .poster-section .position-content-block .content-title {
@@ -2961,7 +3103,7 @@ h1 {
   max-width: 587px;
   width: auto;
   height: auto;
-  z-index: 2;
+  z-index: 1;
 }
 /* line 56, ../sass/_customize-OOO-page.scss */
 .customize-OOO-page .poster-section .position-content-block .content-title {
