@@ -435,5 +435,17 @@
 	<script src="js/googleMapCustomize.js"></script>
 	<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCgDH4m_6s_NqTieahs1Ft9R4ndkKQk0N8&sensor=false&extension=.js'></script>
 	<script src="js/main.js"></script>
+	<!-- I use here, because that does not work when using the code in the file main.js -->
+	<script>
+		$(document).ready(function() {
+
+			$('.services-price-btn').click(function(){
+				var el = $(this).attr('href');
+				$('body').animate({
+					scrollTop: $(el).offset().top}, 1000);
+				return false; 
+			});
+		});
+	</script>
 </body>
 </html>
